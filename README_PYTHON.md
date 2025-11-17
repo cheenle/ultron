@@ -1,19 +1,21 @@
 # ULTRON Python Version 🐍
 
-**自动化的JTDX/WSJT-X/MSHV控制工具**
+**自动化的JTDX/WSJT-X/MSHV控制工具 | Automated JTDX/WSJT-X/MSHV Control Tool**
 
 这是ULTRON的Python重构版本，完全兼容原有的PHP版本功能，同时提供更好的跨平台支持和现代化的代码架构。
 
-## 🚀 主要特性
+This is a Python rewrite of ULTRON, fully compatible with the original PHP version while providing better cross-platform support and modern code architecture.
 
-- ✅ **跨平台支持**: Windows, Linux, macOS
-- ✅ **完整UDP协议**: 兼容WSJT-X/JTDX/MSHV
-- ✅ **智能QSO管理**: 自动CQ呼叫和响应
-- ✅ **DXCC白名单**: 精确定位未通联实体
-- ✅ **ADIF日志**: 独立日志文件管理
-- ✅ **实时分析**: DXCC通联情况统计
-- ✅ **彩色终端**: 美观的界面输出
-- ✅ **模块化设计**: 易于扩展和维护
+## 🚀 主要特性 | Key Features
+
+- ✅ **跨平台支持**: Windows, Linux, macOS | **Cross-platform**: Windows, Linux, macOS
+- ✅ **完整UDP协议**: 兼容WSJT-X/JTDX/MSHV | **Full UDP Protocol**: Compatible with WSJT-X/JTDX/MSHV
+- ✅ **智能QSO管理**: 自动CQ呼叫和响应 | **Smart QSO Management**: Auto CQ calling and response
+- ✅ **DXCC白名单**: 精确定位未通联实体 | **DXCC Whitelist**: Target unworked entities precisely
+- ✅ **ADIF日志**: 独立日志文件管理 | **ADIF Logging**: Independent log file management
+- ✅ **实时分析**: DXCC通联情况统计 | **Real-time Analysis**: DXCC contact statistics
+- ✅ **彩色终端**: 美观的界面输出 | **Color Terminal**: Beautiful interface output
+- ✅ **模块化设计**: 易于扩展和维护 | **Modular Design**: Easy to extend and maintain
 
 ## 📋 系统要求
 
@@ -70,19 +72,26 @@ python run_ultron.py dxcc
 python run_ultron.py analyze
 ```
 
-## 📁 文件结构
+## 📁 文件结构 | File Structure
 
 ```
 ultron-python/
-├── ultron.py              # 标准ULTRON主程序
-├── ultron_dxcc.py         # 增强版ULTRON (DXCC功能)
-├── dxcc_config.py         # DXCC白名单配置
-├── run_ultron.py          # 跨平台启动脚本
-├── run_ultron.sh          # Unix/Linux启动脚本
-├── run_ultron.bat         # Windows启动脚本
-├── base.json              # DXCC数据库
-├── wsjtx_log.adi          # ADIF日志文件（自动生成）
-└── README_PYTHON.md       # 本文档
+├── ultron.py              # 标准ULTRON主程序 | Standard ULTRON main program
+├── ultron_dxcc.py         # 增强版ULTRON (DXCC功能) | Enhanced ULTRON (DXCC features)
+├── dxcc_config.py         # DXCC白名单配置 | DXCC whitelist configuration
+├── run_ultron.py          # 跨平台启动脚本 | Cross-platform launcher
+├── run_ultron.sh          # Unix/Linux启动脚本 | Unix/Linux launcher
+├── run_ultron.bat         # Windows启动脚本 | Windows launcher
+├── dxcc_analyzer.py       # DXCC分析工具 | DXCC analysis tool
+├── base.json              # DXCC数据库 | DXCC database
+├── dxcc_latest.json       # 最新DXCC数据 | Latest DXCC data
+├── wsjtx_log.adi          # ADIF日志文件（自动生成） | ADIF log file (auto-generated)
+├── worked_dxcc_cache.json # DXCC缓存数据 | DXCC cache data
+├── requirements.txt       # Python依赖 | Python dependencies
+├── test_protocol_parser.py # 协议解析测试 | Protocol parser test
+├── test_udp.py            # UDP测试 | UDP test
+├── test_ultron_live.py    # 在线测试 | Live test
+└── README_PYTHON.md       # 本文档 | This documentation
 ```
 
 ## ⚙️ 配置说明
@@ -194,50 +203,74 @@ import logging
 logging.basicConfig(level=logging.DEBUG)
 ```
 
-## 📊 性能优化
+## 🔧 高级配置 | Advanced Configuration
 
-### 内存使用
-- 使用生成器处理大日志文件
-- 缓存DXCC查询结果
-- 定期清理状态变量
+### 网络配置 | Network Configuration
+在`ultron.py`中修改 | Modify in `ultron.py`:
+```python
+UDP_PORT = 2237          # 监听端口 | Listening port
+UDP_FORWARD_PORT = 2277  # 转发端口 | Forward port
+TIMEOUT_SECONDS = 90     # 超时时间 | Timeout seconds
+SIGNAL_THRESHOLD = -20   # 信号阈值 | Signal threshold
+```
 
-### 网络优化
-- UDP数据包大小优化（512字节）
-- socket超时设置
-- 错误重试机制
+### 模式支持 | Supported Modes
+支持的模式 | Supported modes:
+- FT8 (主要模式 | Primary mode)
+- FT4  
+- JT65
+- JT9
+- FST4
+- Q65
+- MSK144
 
-## 🔐 安全考虑
+### 调试模式 | Debug Mode
+在代码中添加调试输出 | Add debug output in code:
+```python
+import logging
+logging.basicConfig(level=logging.DEBUG)
+```
 
-- 仅监听本地网络接口
-- 不存储敏感信息
-- 日志文件权限控制
-- 输入验证和清理
+### 性能优化 | Performance Optimization
 
-## 🤝 贡献指南
+**网络优化 | Network Optimization:**
+- UDP数据包大小优化（512字节）| UDP packet size optimization (512 bytes)
+- socket超时设置 | Socket timeout settings
+- 错误重试机制 | Error retry mechanisms
 
-欢迎提交Issue和Pull Request：
+## 🔐 安全考虑 | Security Considerations
 
-1. Fork项目
-2. 创建特性分支
-3. 提交更改
-4. 推送到分支
-5. 创建Pull Request
+- 仅监听本地网络接口 | Listen only on local network interface
+- 不存储敏感信息 | No sensitive information storage
+- 日志文件权限控制 | Log file permission control
+- 输入验证和清理 | Input validation and sanitization
 
-## 📄 许可证
+## 🤝 贡献指南 | Contributing Guide
+
+欢迎提交Issue和Pull Request | Welcome to submit Issues and Pull Requests:
+
+1. Fork项目 | Fork the project
+2. 创建特性分支 | Create feature branch
+3. 提交更改 | Submit changes
+4. 推送到分支 | Push to branch
+5. 创建Pull Request | Create Pull Request
+
+## 📄 许可证 | License
 
 Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International
 
-## 🙏 致谢
+## 🙏 致谢 | Acknowledgments
 
-- **LU9DCE (Eduardo Castillo)** - 原始PHP版本作者
-- **WSJT-X团队** - 优秀的数字模式软件
-- **业余无线电社区** - 持续的支持和反馈
+- **LU9DCE (Eduardo Castillo)** - 原始PHP版本作者 | Original PHP version author
+- **WSJT-X团队** - 优秀的数字模式软件 | Excellent digital mode software
+- **业余无线电社区** - 持续的支持和反馈 | Continuous support and feedback
 
-## 📞 联系方式
+## 📞 联系方式 | Contact Information
 
-- 原始作者: castilloeduardo@outlook.com.ar
-- 项目维护: [维护者联系信息]
+- 原始作者 | Original author: castilloeduardo@outlook.com.ar
+- 项目维护 | Project maintenance: [维护者联系信息 | Maintainer contact info]
 
 ---
 
-**享受自动化通联的乐趣！73!**
+**享受自动化通联的乐趣！73! | Enjoy automated QSOs! 73!**
+

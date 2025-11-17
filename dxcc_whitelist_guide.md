@@ -1,29 +1,52 @@
-# ULTRON DXCC白名单功能使用说明
+# ULTRON DXCC白名单功能使用说明 | DXCC Whitelist Guide
 
-## 概述
+## 概述 | Overview
 此增强版ULTRON程序提供了DXCC白名单功能，帮助您更有效地获取新的DXCC实体。程序会分析您的通联日志，识别未通联的DXCC实体，并优先响应这些实体的CQ呼叫。
 
-## 主要功能
+This enhanced ULTRON program provides DXCC whitelist functionality to help you more effectively obtain new DXCC entities. The program analyzes your contact logs, identifies unworked DXCC entities, and prioritizes responding to CQ calls from these entities.
 
-1. **DXCC白名单**: 设置特定的DXCC实体，程序会优先响应这些实体的CQ
-2. **波段白名单**: 为特定波段设置DXCC实体，优先在该波段通联这些实体
-3. **未通联实体识别**: 自动识别您尚未通联的DXCC实体
-4. **波段特定通联**: 识别您尚未在特定波段通联的DXCC实体
+## 主要功能 | Key Features
 
-## 配置文件
+1. **DXCC白名单**: 设置特定的DXCC实体，程序会优先响应这些实体的CQ | **DXCC Whitelist**: Set specific DXCC entities, the program will prioritize responding to CQ from these entities
+2. **波段白名单**: 为特定波段设置DXCC实体，优先在该波段通联这些实体 | **Band Whitelist**: Set DXCC entities for specific bands, prioritize contacts on those bands
+3. **未通联实体识别**: 自动识别您尚未通联的DXCC实体 | **Unworked Entity Identification**: Automatically identify DXCC entities you haven't worked
+4. **波段特定通联**: 识别您尚未在特定波段通联的DXCC实体 | **Band-specific Contacts**: Identify DXCC entities you haven't worked on specific bands
 
-### dxcc_config.php
+## 配置文件 | Configuration Files
+
+### dxcc_config.php (PHP版本)
 这是主要的配置文件，包含两个数组：
 
-1. **$dxcc_whitelist**: 全局DXCC白名单
-   - 格式: `"DXCC_ID" => "DXCC名称"`
-   - 这些实体在任何波段都会被优先考虑
+1. **$dxcc_whitelist**: 全局DXCC白名单 | Global DXCC whitelist
+   - 格式: `"DXCC_ID" => "DXCC名称"` | Format: `"DXCC_ID" => "DXCC_Name"`
+   - 这些实体在任何波段都会被优先考虑 | These entities are prioritized on all bands
 
-2. **$band_whitelist**: 按波段的DXCC白名单
-   - 格式: `"波段" => array("DXCC_ID1", "DXCC_ID2", ...)`
-   - 这些实体仅在指定波段被优先考虑
+2. **$band_whitelist**: 按波段的DXCC白名单 | Band-specific DXCC whitelist
+   - 格式: `"波段" => array("DXCC_ID1", "DXCC_ID2", ...)` | Format: `"Band" => array("DXCC_ID1", "DXCC_ID2", ...)`
+   - 这些实体仅在指定波段被优先考虑 | These entities are only prioritized on specified bands
 
-## 使用方法
+### dxcc_config.py (Python版本)
+Python版本使用类似的配置结构：
+
+```python
+# 全局DXCC白名单 | Global DXCC whitelist
+dxcc_whitelist = {
+    "1": "USA",
+    "110": "SPAIN", 
+    "284": "BULGARIA"
+}
+
+# 按波段的白名单 | Band-specific whitelist
+band_whitelist = {
+    "20m": {"1": "USA", "110": "SPAIN"},
+    "40m": {"1": "USA", "284": "BULGARIA"}
+}
+
+# 白名单模式 | Whitelist mode
+dxcc_whitelist_only = False  # False=优先模式, True=仅白名单模式
+```
+
+## 使用方法 | Usage Methods
 
 ### 1. 分析当前通联情况
 ```bash

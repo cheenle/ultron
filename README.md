@@ -14,6 +14,21 @@
 
 **DOWNLOAD** : 📥 [Ultron (Main Branch)](https://github.com/lu9dce/ultron/archive/refs/heads/main.zip)
 
+## 🚀 What's New - DXCC & Python Support
+
+**✨ Enhanced DXCC Features:**
+- **DXCC Whitelist System**: Target specific DXCC entities for more efficient QSOs
+- **DXCC Analyzer**: Analyze your log files to identify worked/unworked entities
+- **Smart DXCC Targeting**: Automatically prioritize stations from desired countries
+- **Band-specific DXCC**: Different whitelist for different bands
+
+**🐍 Python Version Available:**
+- Full Python rewrite with enhanced features
+- Cross-platform compatibility (Windows, Linux, macOS)
+- Modern architecture with better performance
+- All original PHP features plus new enhancements
+- See [README_PYTHON.md](README_PYTHON.md) for Python version details
+
 "Remember that this software requires knowledge in both operating systems and PHP.
 
 I have tested this program on Slackware 15.0, and other colleagues have tested it on Fedora and Debian, as well as on Windows.
@@ -56,16 +71,23 @@ In summary, employing ULTRON as a BOT for radio program control offers an array 
 
 ## Requirements
 
-Before utilizing ULTRON, please ensure the following prerequisites are met:
+### PHP Version Requirements
 - Latest version of **PHP** installed
 - List of required **PHP modules** (specified at the end of the script)
 - Properly configured radio software for optimal performance
-- Recommendations for optimal usage:
-  - Disable the Tx watchdog
-  - Configure the UDP server to target the program's IP location
-  - Enable transmission of logged QSO ADIF data
-  - Do not filter UDP data
-  - Adjust firewall settings to facilitate data flow
+
+### Python Version Requirements
+- Python 3.7 or higher
+- Network permissions for UDP communication
+- Terminal with ANSI color support (recommended)
+
+### General Recommendations for Optimal Usage:
+- Disable the Tx watchdog
+- Configure the UDP server to target the program's IP location
+- Enable transmission of logged QSO ADIF data
+- Do not filter UDP data
+- Adjust firewall settings to facilitate data flow
+- For DXCC features: ensure `base.json` and `dxcc_config` files are properly configured
 
 ## 📋 Details
 
@@ -84,29 +106,82 @@ ULTRON requires a terminal with **ASCII color support**. You can use the **Linux
 
 To control Raspberry Pi LEDs, use the `sudo` command configured without a password prompt. The **green LED** lights up for each decoding and turns off when inactive. The **red LED** exhibits a heartbeat-like effect during QSOs. Conducting a QSO emits an audible tone if a speaker is connected to the Pi's jack.
 
-## ULTRON Execution Instructions
+## 🚀 Quick Start Options
 
-To run ULTRON on both Windows and Linux, you have several options:
+### PHP Version (Classic)
+**Linux:**
+```bash
+# Standard ULTRON
+php -c extra/php-lnx.ini robot.php
 
-1. **Terminal Execution:**
-   You can execute ULTRON directly through the terminal by running the following command: `php robot.php`
+# Enhanced ULTRON with DXCC whitelist
+php -c extra/php-lnx.ini robot_dxcc.php
 
-2. **Batch Script (Windows) or Shell Script (Linux):**
-Alternatively, you can create a batch script (.BAT) for Windows or a shell script (.sh) for Linux with the necessary commands to execute ULTRON.
+# DXCC analysis tool
+php -c extra/php-lnx.ini dxcc_analyzer.php
 
-3. **Task Scheduler:**
-You may also utilize a task scheduler to run ULTRON in the background upon system startup.
+# Interactive menu
+./run_ultron.sh
+```
 
-Please note the following important considerations:
+**Windows:**
+```cmd
+# Using the batch script (recommended)
+run_ultron.bat
 
-- ULTRON requires specific modules. Please ensure that you have the required modules installed. Refer to the "robot.php" file for the list of requirements.
-- Make necessary modifications to the "php.ini" configuration to meet the requirements of ULTRON.
+# Or directly with PHP
+c:\php\php.exe -c extra\php-win.ini robot.php
+```
 
-For reference, an example "php.ini" configuration is provided in the "extras" folder.
+### Python Version (Recommended)
+**Cross-platform:**
+```bash
+# Interactive menu
+python run_ultron.py
 
-For any further assistance, please refer to the documentation or contact our support team.
+# Standard mode
+python ultron.py
 
-Thank you for using ULTRON!
+# DXCC enhanced mode
+python ultron_dxcc.py
+
+# DXCC analysis
+python dxcc_analyzer.py
+```
+
+## 📋 DXCC Features Guide
+
+### DXCC Whitelist Configuration
+Edit `dxcc_config.php` (PHP) or `dxcc_config.py` (Python):
+
+```php
+// PHP Version
+$dxcc_whitelist = [
+    "1" => "USA",
+    "110" => "SPAIN", 
+    "284" => "BULGARIA"
+];
+```
+
+```python
+# Python Version
+dxcc_whitelist = {
+    "1": "USA",
+    "110": "SPAIN",
+    "284": "BULGARIA"
+}
+```
+
+### DXCC Analysis Tool
+Analyze your log files to find unworked entities:
+- **PHP**: `php dxcc_analyzer.php`
+- **Python**: `python dxcc_analyzer.py`
+
+Features:
+- Shows worked/unworked DXCC entities
+- Band-specific analysis
+- Generates recommended whitelist
+- Exports statistics in multiple formats
 
 ## ⚠️ Disclaimer
 
@@ -118,15 +193,50 @@ Ultron was developed by me for me and some friends. It requires the user to have
 
 **Why PHP!** Because it runs on any operating system and no compilation is needed. The script is just text with commands. Ultron will execute on any device that can run PHP (PC/CELLPHONE/ROUTER... ETC).
 
-## 🖥️ Devices that Can Run PHP
+## 🖥️ Supported Platforms
 
-- Personal Computers (PC) with Windows, macOS, or Linux.
-- Smartphones and tablets with iOS, Android, etc.
-- Web servers (Linux, Windows Server, etc.).
-- Network devices (routers, switches, etc.).
-- Internet of Things (IoT) devices with processing capabilities.
-- Development boards like Raspberry Pi (Linux).
-- Modified gaming consoles.
-- Smart TVs and multimedia devices.
-- Some printers and multifunctional devices.
-- Industrial control systems and embedded devices.
+### PHP Version
+- Personal Computers (PC) with Windows, macOS, or Linux
+- Web servers (Linux, Windows Server, etc.)
+- Network devices (routers, switches, etc.) with PHP support
+- Internet of Things (IoT) devices with processing capabilities
+- Development boards like Raspberry Pi (Linux)
+- Smart TVs and multimedia devices with PHP
+- Industrial control systems and embedded devices
+
+### Python Version
+- All platforms supporting Python 3.7+
+- Windows, macOS, Linux natively
+- Raspberry Pi and other SBCs
+- Docker containers
+- Virtual environments
+
+### Cross-Platform Compatibility
+Both PHP and Python versions support:
+- **UDP Protocol**: Compatible with JTDX, WSJT-X, MSHV
+- **ADIF Format**: Standard logbook format
+- **Real-time Operation**: Seamless mode switching
+- **Color Terminal**: Enhanced user experience
+
+## 📚 Additional Resources
+
+- **[Python Version Documentation](README_PYTHON.md)** - Complete Python version guide
+- **[DXCC Whitelist Guide](dxcc_whitelist_guide.md)** - Detailed DXCC configuration
+- **[CLAUDE.md](CLAUDE.md)** - Development and architecture documentation
+- **Original Wiki** - Spanish help: [GitHub Wiki](https://github.com/lu9dce/ultron/wiki)
+
+## 🔄 Version Comparison
+
+| Feature | PHP Version | Python Version |
+|---------|-------------|----------------|
+| **Basic QSO Automation** | ✅ | ✅ |
+| **DXCC Whitelist** | ✅ | ✅ |
+| **DXCC Analyzer** | ✅ | ✅ |
+| **Cross-platform** | ✅ | ✅ |
+| **Performance** | Good | Excellent |
+| **Memory Usage** | Moderate | Optimized |
+| **Modern Architecture** | Classic | Enhanced |
+| **Active Development** | Maintenance | Active |
+| **New Features** | Limited | Regular Updates |
+
+**Recommendation**: New users should start with Python version for better performance and ongoing development support.
