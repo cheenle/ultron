@@ -1,0 +1,249 @@
+# RDMA Amateur Radio Configuration Example
+# This is a specialized configuration for amateur radio operations
+
+agent_id: "ham-radio-station"
+instance_name: "main-radio"
+
+# Amateur radio specific configuration
+ham_radio:
+  enabled: true
+  
+  # UDP ports for WSJT-X/JTDX communication
+  udp_port: 2237
+  udp_forward_port: 2277
+  
+  # Signal processing parameters
+  signal_threshold: -20  # dB - signals weaker than this will be ignored
+  timeout_seconds: 90    # QSO timeout in seconds
+  
+  # File paths
+  log_file: "logs/wsjtx_log.adi"  # ADIF log file
+  base_file: "data/base.json"     # DXCC database file
+  
+  # Operating parameters
+  auto_cq: true          # Automatically respond to CQ calls
+  dxcc_whitelist_only: false  # false = priority mode, true = whitelist only
+  
+  # DXCC targeting - entities you want to work
+  dxcc_whitelist:
+    "1": "UNITED STATES"      # Always respond to US stations
+    "110": "SPAIN"            # Priority for Spain
+    "284": "BULGARIA"         # Priority for Bulgaria
+    "206": "HUNGARY"          # Priority for Hungary
+    "280": "GERMANY"          # Priority for Germany
+    "227": "ENGLAND"          # Priority for England
+    "195": "ITALY"            # Priority for Italy
+    "125": "POLAND"           # Priority for Poland
+    "269": "CZECH REPUBLIC"   # Priority for Czech Republic
+    "216": "GREECE"           # Priority for Greece
+    "236": "TURKEY"           # Priority for Turkey
+    "4": "ALGERIA"            # Priority for Algeria
+    "400": "MOROCCO"          # Priority for Morocco
+    "148": "CANARY IS"        # Priority for Canary Islands
+    "408": "AZORES"           # Priority for Azores
+    "165": "CAPE VERDE"       # Priority for Cape Verde
+    "497": "BURKINA FASO"     # Priority for Burkina Faso
+    "92": "LIBERIA"           # Priority for Liberia
+    "104": "GHANA"            # Priority for Ghana
+    "108": "GUINEA-BISSAU"    # Priority for Guinea-Bissau
+    "107": "GUINEA"           # Priority for Guinea
+  
+  # Band-specific targeting
+  band_whitelist:
+    "160m":
+      "1": "USA"
+      "6": "CANADA"
+      "110": "SPAIN"
+      "284": "BULGARIA"
+    
+    "80m":
+      "1": "USA"
+      "6": "CANADA"
+      "110": "SPAIN"
+      "284": "BULGARIA"
+      "206": "HUNGARY"
+      "280": "GERMANY"
+    
+    "40m":
+      "1": "USA"
+      "6": "CANADA"
+      "110": "SPAIN"
+      "284": "BULGARIA"
+      "206": "HUNGARY"
+      "280": "GERMANY"
+      "227": "ENGLAND"
+      "195": "ITALY"
+    
+    "30m":
+      "1": "USA"
+      "6": "CANADA"
+      "110": "SPAIN"
+      "284": "BULGARIA"
+      "206": "HUNGARY"
+      "280": "GERMANY"
+      "227": "ENGLAND"
+      "195": "ITALY"
+      "125": "POLAND"
+      "269": "CZECH REPUBLIC"
+    
+    "20m":
+      "1": "USA"
+      "6": "CANADA"
+      "110": "SPAIN"
+      "284": "BULGARIA"
+      "206": "HUNGARY"
+      "280": "GERMANY"
+      "227": "ENGLAND"
+      "195": "ITALY"
+      "125": "POLAND"
+      "269": "CZECH REPUBLIC"
+      "216": "GREECE"
+      "236": "TURKEY"
+      "4": "ALGERIA"
+      "400": "MOROCCO"
+      "148": "CANARY IS"
+      "408": "AZORES"
+    
+    "17m":
+      "1": "USA"
+      "6": "CANADA"
+      "110": "SPAIN"
+      "284": "BULGARIA"
+      "206": "HUNGARY"
+      "280": "GERMANY"
+      "227": "ENGLAND"
+      "195": "ITALY"
+      "125": "POLAND"
+      "269": "CZECH REPUBLIC"
+      "216": "GREECE"
+      "236": "TURKEY"
+      "4": "ALGERIA"
+      "400": "MOROCCO"
+      "148": "CANARY IS"
+      "408": "AZORES"
+      "165": "CAPE VERDE"
+      "497": "BURKINA FASO"
+      "92": "LIBERIA"
+      "104": "GHANA"
+    
+    "15m":
+      "1": "USA"
+      "6": "CANADA"
+      "110": "SPAIN"
+      "284": "BULGARIA"
+      "206": "HUNGARY"
+      "280": "GERMANY"
+      "227": "ENGLAND"
+      "195": "ITALY"
+      "125": "POLAND"
+      "269": "CZECH REPUBLIC"
+      "216": "GREECE"
+      "236": "TURKEY"
+      "4": "ALGERIA"
+      "400": "MOROCCO"
+      "148": "CANARY IS"
+      "408": "AZORES"
+      "165": "CAPE VERDE"
+      "497": "BURKINA FASO"
+      "92": "LIBERIA"
+      "104": "GHANA"
+      "108": "GUINEA-BISSAU"
+      "107": "GUINEA"
+    
+    "12m":
+      "1": "USA"
+      "6": "CANADA"
+      "110": "SPAIN"
+      "284": "BULGARIA"
+      "206": "HUNGARY"
+      "280": "GERMANY"
+      "227": "ENGLAND"
+      "195": "ITALY"
+      "125": "POLAND"
+      "269": "CZECH REPUBLIC"
+      "216": "GREECE"
+      "236": "TURKEY"
+      "4": "ALGERIA"
+      "400": "MOROCCO"
+      "148": "CANARY IS"
+      "408": "AZORES"
+      "165": "CAPE VERDE"
+      "497": "BURKINA FASO"
+      "92": "LIBERIA"
+      "104": "GHANA"
+      "108": "GUINEA-BISSAU"
+      "107": "GUINEA"
+    
+    "10m":
+      "1": "USA"
+      "6": "CANADA"
+      "110": "SPAIN"
+      "284": "BULGARIA"
+      "206": "HUNGARY"
+      "280": "GERMANY"
+      "227": "ENGLAND"
+      "195": "ITALY"
+      "125": "POLAND"
+      "269": "CZECH REPUBLIC"
+      "216": "GREECE"
+      "236": "TURKEY"
+      "4": "ALGERIA"
+      "400": "MOROCCO"
+      "148": "CANARY IS"
+      "408": "AZORES"
+      "165": "CAPE VERDE"
+      "497": "BURKINA FASO"
+      "92": "LIBERIA"
+      "104": "GHANA"
+      "108": "GUINEA-BISSAU"
+      "107": "GUINEA"
+
+# Monitoring configuration for amateur radio operations
+monitoring:
+  enabled: true
+  interval: 30  # Check every 30 seconds
+  metrics_enabled: true
+  health_checks: ["cpu", "memory", "disk", "network"]
+  thresholds:
+    cpu_percent: 75.0    # Lower threshold for continuous operation
+    memory_percent: 80.0
+    disk_percent: 85.0
+
+# Logging configuration for ham radio operations
+logging:
+  level: "INFO"  # Can be DEBUG for detailed logging
+  file: "logs/ham_radio.log"
+  max_size: 52428800  # 50MB
+  backup_count: 10
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+  console: true
+
+# Protocol configuration (minimal for ham radio only)
+protocols:
+  http:
+    enabled: true
+    type: "http"
+    host: "127.0.0.1"  # Localhost only for security
+    port: 8080
+    ssl: false
+    auth: null
+    options: {}
+
+# Security configuration
+security:
+  enabled: false  # Disabled for simplicity in ham radio operations
+  auth_required: false
+  allowed_commands: ["status", "metrics", "get_dxcc_info", "is_worked", "get_ham_status"]
+
+# Task management
+tasks:
+  max_concurrent: 5
+  timeout: 180  # Longer timeout for radio operations
+  retry_attempts: 2
+  retry_delay: 10
+
+# Directory configuration
+data_dir: "data"
+config_dir: "config"
+log_dir: "logs"
+temp_dir: "temp""file_path":"/Users/cheenle/ultron/ultron-main/rdma/config/rdma_ham_config.yaml"}

@@ -1,0 +1,35 @@
+# Include additional files in the package
+include README.md
+include LICENSE
+include CHANGELOG.md
+include requirements.txt
+include requirements-dev.txt
+include requirements-docs.txt
+
+# Include configuration files
+recursive-include config *.yaml *.yml *.json *.toml
+
+# Include documentation
+recursive-include docs *.md *.rst *.txt
+recursive-include docs/_static *
+recursive-include docs/_templates *
+
+# Include examples
+recursive-include examples *.py *.yaml *.yml *.json *.md
+
+# Include tests
+recursive-include tests *.py *.yaml *.yml *.json
+
+# Exclude development files
+global-exclude *.pyc
+global-exclude __pycache__
+global-exclude .git*
+global-exclude .coverage
+global-exclude .pytest_cache
+global-exclude *.egg-info
+global-exclude dist
+global-exclude build
+
+# Include CI configuration
+include .github/workflows/*.yml
+global-include .pre-commit-config.yaml

@@ -1,0 +1,1106 @@
+{
+    "291": {
+        "name": "UNITED STATES",
+        "first_worked": "20230227 010645",
+        "band": "15m",
+        "call": "N7LD"
+    },
+    "327": {
+        "name": "INDONESIA",
+        "first_worked": "20230227 010930",
+        "band": "15m",
+        "call": "YE2DOR"
+    },
+    "15": {
+        "name": "ASIATIC RUSSIA",
+        "first_worked": "20230227 133530",
+        "band": "40m",
+        "call": "UA9CR"
+    },
+    "339": {
+        "name": "JAPAN",
+        "first_worked": "20230227 133730",
+        "band": "40m",
+        "call": "JH3KHS"
+    },
+    "315": {
+        "name": "SRI LANKA",
+        "first_worked": "20230227 143830",
+        "band": "15m",
+        "call": "4S6ARW"
+    },
+    "318": {
+        "name": "CHINA",
+        "first_worked": "20230227 235245",
+        "band": "40m",
+        "call": "BG0BBB"
+    },
+    "236": {
+        "name": "GREECE",
+        "first_worked": "20230228 000621",
+        "band": "40m",
+        "call": "SV8DCY"
+    },
+    "241": {
+        "name": "SOUTH SHETLAND ISLANDS",
+        "first_worked": "20230228 130517",
+        "band": "40m",
+        "call": "BY6SX"
+    },
+    "137": {
+        "name": "REPUBLIC OF KOREA",
+        "first_worked": "20230228 135530",
+        "band": "40m",
+        "call": "DS4GQR"
+    },
+    "224": {
+        "name": "FINLAND",
+        "first_worked": "20230228 143000",
+        "band": "20m",
+        "call": "OH6RE"
+    },
+    "440": {
+        "name": "MALAWI",
+        "first_worked": "20230228 230316",
+        "band": "20m",
+        "call": "7Q7EMH"
+    },
+    "100": {
+        "name": "ARGENTINA",
+        "first_worked": "20230301 000002",
+        "band": "20m",
+        "call": "LU6DTJ"
+    },
+    "269": {
+        "name": "POLAND",
+        "first_worked": "20230301 000430",
+        "band": "20m",
+        "call": "SN550N"
+    },
+    "150": {
+        "name": "AUSTRALIA",
+        "first_worked": "20230301 012515",
+        "band": "10m",
+        "call": "VK5COL"
+    },
+    "54": {
+        "name": "EUROPEAN RUSSIA",
+        "first_worked": "20230301 140100",
+        "band": "40m",
+        "call": "UA0SQR"
+    },
+    "386": {
+        "name": "TAIWAN",
+        "first_worked": "20230304 144048",
+        "band": "20m",
+        "call": "BV7RR"
+    },
+    "4": {
+        "name": "AGALEGA & ST BRANDON",
+        "first_worked": "20230304 230845",
+        "band": "20m",
+        "call": "3B7M"
+    },
+    "130": {
+        "name": "KAZAKHSTAN",
+        "first_worked": "20230305 022530",
+        "band": "20m",
+        "call": "UN3P"
+    },
+    "363": {
+        "name": "MONGOLIA",
+        "first_worked": "20230305 023245",
+        "band": "15m",
+        "call": "JT1DN"
+    },
+    "108": {
+        "name": "BRAZIL",
+        "first_worked": "20230305 090300",
+        "band": "20m",
+        "call": "PY1SX"
+    },
+    "146": {
+        "name": "LITHUANIA",
+        "first_worked": "20230305 091630",
+        "band": "15m",
+        "call": "YL3CW"
+    },
+    "176": {
+        "name": "FIJI",
+        "first_worked": "20230305 140015",
+        "band": "20m",
+        "call": "3D2USU"
+    },
+    "162": {
+        "name": "NEW CALEDONIA",
+        "first_worked": "20230305 142000",
+        "band": "40m",
+        "call": "FK8HM"
+    },
+    "336": {
+        "name": "ISRAEL",
+        "first_worked": "20230305 233700",
+        "band": "40m",
+        "call": "4X1UF"
+    },
+    "499": {
+        "name": "SLOVENIA",
+        "first_worked": "20230305 234045",
+        "band": "40m",
+        "call": "S52D"
+    },
+    "144": {
+        "name": "URUGUAY",
+        "first_worked": "20230305 235945",
+        "band": "20m",
+        "call": "CX1FK"
+    },
+    "387": {
+        "name": "THAILAND",
+        "first_worked": "20230306 005001",
+        "band": "20m",
+        "call": "HS7WMU"
+    },
+    "324": {
+        "name": "INDIA",
+        "first_worked": "20230306 131401",
+        "band": "20m",
+        "call": "VU2RS"
+    },
+    "209": {
+        "name": "BELGIUM",
+        "first_worked": "20230306 132048",
+        "band": "15m",
+        "call": "ON3SGU"
+    },
+    "46": {
+        "name": "EAST MALAYSIA",
+        "first_worked": "20230306 152001",
+        "band": "20m",
+        "call": "9W8BAT"
+    },
+    "247": {
+        "name": "SPRATLY IS",
+        "first_worked": "20230306 152701",
+        "band": "40m",
+        "call": "9M2DA"
+    },
+    "503": {
+        "name": "CZECH REPUBLIC",
+        "first_worked": "20230306 160400",
+        "band": "20m",
+        "call": "OK2WMC"
+    },
+    "462": {
+        "name": "REPUBLIC OF SOUTH AFRICA",
+        "first_worked": "20230306 162217",
+        "band": "20m",
+        "call": "ZS5CG"
+    },
+    "221": {
+        "name": "DENMARK",
+        "first_worked": "20230306 162731",
+        "band": "20m",
+        "call": "OZ2LC"
+    },
+    "281": {
+        "name": "SPAIN",
+        "first_worked": "20230306 225545",
+        "band": "20m",
+        "call": "EA7LZ"
+    },
+    "321": {
+        "name": "HONG KONG",
+        "first_worked": "20230306 231518",
+        "band": "40m",
+        "call": "VR2VGM"
+    },
+    "225": {
+        "name": "SARDINIA",
+        "first_worked": "20230306 232230",
+        "band": "40m",
+        "call": "IS0KNG"
+    },
+    "212": {
+        "name": "BULGARIA",
+        "first_worked": "20230306 232315",
+        "band": "40m",
+        "call": "LZ2VQ"
+    },
+    "227": {
+        "name": "FRANCE",
+        "first_worked": "20230306 232530",
+        "band": "40m",
+        "call": "F5SJF"
+    },
+    "266": {
+        "name": "NORWAY",
+        "first_worked": "20230306 235315",
+        "band": "20m",
+        "call": "LB8MG"
+    },
+    "404": {
+        "name": "BURUNDI",
+        "first_worked": "20230306 235515",
+        "band": "20m",
+        "call": "9U5R"
+    },
+    "369": {
+        "name": "NEPAL",
+        "first_worked": "20230307 010400",
+        "band": "20m",
+        "call": "9N7AA"
+    },
+    "126": {
+        "name": "KALININGRAD",
+        "first_worked": "20230307 141615",
+        "band": "15m",
+        "call": "R2DRQ"
+    },
+    "1": {
+        "name": "CANADA",
+        "first_worked": "20230307 161934",
+        "band": "20m",
+        "call": "VE7ON"
+    },
+    "442": {
+        "name": "MALI",
+        "first_worked": "20230308 230000",
+        "band": "20m",
+        "call": "TZ1CE"
+    },
+    "378": {
+        "name": "SAUDI ARABIA",
+        "first_worked": "20230308 235445",
+        "band": "20m",
+        "call": "HZ1TT"
+    },
+    "375": {
+        "name": "PHILIPPINES",
+        "first_worked": "20230309 143315",
+        "band": "10m",
+        "call": "DU7G"
+    },
+    "288": {
+        "name": "UKRAINE",
+        "first_worked": "20230310 131715",
+        "band": "10m",
+        "call": "UW2ZM"
+    },
+    "430": {
+        "name": "KENYA",
+        "first_worked": "20230310 155830",
+        "band": "20m",
+        "call": "5Z4VJ"
+    },
+    "27": {
+        "name": "BELARUS",
+        "first_worked": "20230310 162000",
+        "band": "20m",
+        "call": "EW1TZ"
+    },
+    "501": {
+        "name": "BOSNIA-HERZEGOVINA",
+        "first_worked": "20230311 062515",
+        "band": "15m",
+        "call": "E75C"
+    },
+    "230": {
+        "name": "FED REP OF GERMANY",
+        "first_worked": "20230311 072630",
+        "band": "15m",
+        "call": "DL8LAS"
+    },
+    "70": {
+        "name": "CUBA",
+        "first_worked": "20230311 073030",
+        "band": "15m",
+        "call": "CO8LY"
+    },
+    "279": {
+        "name": "SCOTLAND",
+        "first_worked": "20230311 171100",
+        "band": "20m",
+        "call": "MM0HVU"
+    },
+    "294": {
+        "name": "WALES",
+        "first_worked": "20230311 171600",
+        "band": "20m",
+        "call": "MW0YAE"
+    },
+    "170": {
+        "name": "NEW ZEALAND",
+        "first_worked": "20230312 010645",
+        "band": "15m",
+        "call": "ZL1MVL"
+    },
+    "293": {
+        "name": "VIETNAM",
+        "first_worked": "20230312 010815",
+        "band": "15m",
+        "call": "XV9NPS"
+    },
+    "381": {
+        "name": "SINGAPORE",
+        "first_worked": "20230312 012300",
+        "band": "10m",
+        "call": "9V1YC"
+    },
+    "304": {
+        "name": "BAHRAIN",
+        "first_worked": "20230312 034345",
+        "band": "15m",
+        "call": "A92GE"
+    },
+    "110": {
+        "name": "HAWAII",
+        "first_worked": "20230312 043415",
+        "band": "15m",
+        "call": "KZ6T"
+    },
+    "45": {
+        "name": "DODECANESE",
+        "first_worked": "20230312 045245",
+        "band": "10m",
+        "call": "SV5AZK"
+    },
+    "263": {
+        "name": "NETHERLANDS",
+        "first_worked": "20230316 145830",
+        "band": "20m",
+        "call": "PD7RF"
+    },
+    "6": {
+        "name": "ALASKA",
+        "first_worked": "20230316 213915",
+        "band": "20m",
+        "call": "NL8F"
+    },
+    "248": {
+        "name": "ITALY",
+        "first_worked": "20230316 233315",
+        "band": "20m",
+        "call": "II7ICT"
+    },
+    "239": {
+        "name": "HUNGARY",
+        "first_worked": "20230318 080330",
+        "band": "15m",
+        "call": "HA7TM"
+    },
+    "245": {
+        "name": "IRELAND",
+        "first_worked": "20230318 081230",
+        "band": "15m",
+        "call": "EI4KF"
+    },
+    "223": {
+        "name": "ENGLAND",
+        "first_worked": "20230318 115945",
+        "band": "15m",
+        "call": "G0AOO"
+    },
+    "265": {
+        "name": "NORTHERN IRELAND",
+        "first_worked": "20230318 120515",
+        "band": "15m",
+        "call": "2I0PBM"
+    },
+    "275": {
+        "name": "ROMANIA",
+        "first_worked": "20230319 034500",
+        "band": "15m",
+        "call": "YO8TVD"
+    },
+    "52": {
+        "name": "ESTONIA",
+        "first_worked": "20230319 074445",
+        "band": "10m",
+        "call": "ES6RQ"
+    },
+    "29": {
+        "name": "CANARY IS",
+        "first_worked": "20230319 083230",
+        "band": "15m",
+        "call": "EA1AKS"
+    },
+    "391": {
+        "name": "UNITED ARAB EMIRATES",
+        "first_worked": "20230321 172145",
+        "band": "40m",
+        "call": "A65DF"
+    },
+    "177": {
+        "name": "MINAMI TORISHIMA",
+        "first_worked": "20230321 232745",
+        "band": "15m",
+        "call": "JD1BOI"
+    },
+    "103": {
+        "name": "GUAM",
+        "first_worked": "20230323 013630",
+        "band": "15m",
+        "call": "WH2CUI"
+    },
+    "71": {
+        "name": "GALAPAGOS",
+        "first_worked": "20230323 030645",
+        "band": "15m",
+        "call": "HC2AO"
+    },
+    "284": {
+        "name": "SWEDEN",
+        "first_worked": "20230325 075100",
+        "band": "15m",
+        "call": "SM5MRW"
+    },
+    "504": {
+        "name": "SLOVAK REPUBLIC",
+        "first_worked": "20230325 195315",
+        "band": "20m",
+        "call": "OM1TT"
+    },
+    "296": {
+        "name": "SERBIA",
+        "first_worked": "20230325 195715",
+        "band": "20m",
+        "call": "YU1FW"
+    },
+    "390": {
+        "name": "TURKEY",
+        "first_worked": "20230325 200630",
+        "band": "20m",
+        "call": "TA6MCU"
+    },
+    "454": {
+        "name": "RWANDA",
+        "first_worked": "20230325 222800",
+        "band": "20m",
+        "call": "9X5RU"
+    },
+    "262": {
+        "name": "TAJIKISTAN",
+        "first_worked": "20230326 031530",
+        "band": "15m",
+        "call": "EY8MM"
+    },
+    "179": {
+        "name": "MOLDOVA",
+        "first_worked": "20230326 055600",
+        "band": "15m",
+        "call": "ER2OZ"
+    },
+    "190": {
+        "name": "SAMOA",
+        "first_worked": "20230326 062130",
+        "band": "15m",
+        "call": "5W1SA"
+    },
+    "466": {
+        "name": "SUDAN",
+        "first_worked": "20230329 234400",
+        "band": "20m",
+        "call": "ST2NH"
+    },
+    "372": {
+        "name": "PAKISTAN",
+        "first_worked": "20230330 145445",
+        "band": "20m",
+        "call": "AP2FI"
+    },
+    "299": {
+        "name": "WEST MALAYSIA",
+        "first_worked": "20230330 151600",
+        "band": "20m",
+        "call": "9W2COD"
+    },
+    "112": {
+        "name": "CHILE",
+        "first_worked": "20230330 223800",
+        "band": "20m",
+        "call": "CB6I"
+    },
+    "75": {
+        "name": "GEORGIA",
+        "first_worked": "20230401 075030",
+        "band": "15m",
+        "call": "RX3FU"
+    },
+    "215": {
+        "name": "CYPRUS",
+        "first_worked": "20230401 142615",
+        "band": "15m",
+        "call": "5B4AOZ"
+    },
+    "497": {
+        "name": "CROATIA",
+        "first_worked": "20230401 142900",
+        "band": "15m",
+        "call": "9A3DVE"
+    },
+    "180": {
+        "name": "MOUNT ATHOS",
+        "first_worked": "20230402 060415",
+        "band": "15m",
+        "call": "SV2JN"
+    },
+    "354": {
+        "name": "LEBANON",
+        "first_worked": "20230402 064845",
+        "band": "15m",
+        "call": "OD5PY"
+    },
+    "348": {
+        "name": "KUWAIT",
+        "first_worked": "20230404 220115",
+        "band": "20m",
+        "call": "9K2YM"
+    },
+    "188": {
+        "name": "NIUE",
+        "first_worked": "20230406 143930",
+        "band": "40m",
+        "call": "E6CI"
+    },
+    "292": {
+        "name": "UZBEKISTAN",
+        "first_worked": "20230407 144130",
+        "band": "20m",
+        "call": "UK8UA"
+    },
+    "370": {
+        "name": "OMAN",
+        "first_worked": "20230409 080845",
+        "band": "15m",
+        "call": "A41DX"
+    },
+    "14": {
+        "name": "ARMENIA",
+        "first_worked": "20230411 040615",
+        "band": "10m",
+        "call": "EK1KE"
+    },
+    "122": {
+        "name": "JERSEY",
+        "first_worked": "20230414 132016",
+        "band": "15m",
+        "call": "GJ0KYZ"
+    },
+    "185": {
+        "name": "SOLOMON ISLANDS",
+        "first_worked": "20230414 183830",
+        "band": "30m",
+        "call": "H44MS"
+    },
+    "376": {
+        "name": "QATAR",
+        "first_worked": "20230515 140515",
+        "band": "15m",
+        "call": "A71UN"
+    },
+    "256": {
+        "name": "MADEIRA IS",
+        "first_worked": "20230515 223600",
+        "band": "15m",
+        "call": "CT3MD"
+    },
+    "345": {
+        "name": "BRUNEI",
+        "first_worked": "20230519 141045",
+        "band": "15m",
+        "call": "V85T"
+    },
+    "135": {
+        "name": "KYRGYZSTAN",
+        "first_worked": "20230616 153300",
+        "band": "20m",
+        "call": "EX2G"
+    },
+    "509": {
+        "name": "MARQUESAS IS",
+        "first_worked": "20230622 121853",
+        "band": "20m",
+        "call": "K7STO"
+    },
+    "453": {
+        "name": "REUNION",
+        "first_worked": "20230804 215115",
+        "band": "40m",
+        "call": "FR4OO"
+    },
+    "502": {
+        "name": "MACEDONIA",
+        "first_worked": "20230806 064730",
+        "band": "15m",
+        "call": "Z35T"
+    },
+    "282": {
+        "name": "TUVALU",
+        "first_worked": "20231001 120915",
+        "band": "40m",
+        "call": "T22T"
+    },
+    "157": {
+        "name": "NAURU",
+        "first_worked": "20231001 131015",
+        "band": "30m",
+        "call": "C21TS"
+    },
+    "254": {
+        "name": "LUXEMBOURG",
+        "first_worked": "20231004 083715",
+        "band": "15m",
+        "call": "LX1GQ"
+    },
+    "460": {
+        "name": "ROTUMA IS",
+        "first_worked": "20231005 081700",
+        "band": "15m",
+        "call": "3D2AG"
+    },
+    "66": {
+        "name": "BELIZE",
+        "first_worked": "20231006 003615",
+        "band": "15m",
+        "call": "V31DL"
+    },
+    "175": {
+        "name": "FRENCH POLYNESIA",
+        "first_worked": "20231006 034715",
+        "band": "15m",
+        "call": "TX6D"
+    },
+    "515": {
+        "name": "SWAINS ISLAND",
+        "first_worked": "20231008 152215",
+        "band": "20m",
+        "call": "W8S"
+    },
+    "21": {
+        "name": "BALEARIC IS",
+        "first_worked": "20231014 074200",
+        "band": "10m",
+        "call": "EA1YO"
+    },
+    "242": {
+        "name": "ICELAND",
+        "first_worked": "20231015 075715",
+        "band": "15m",
+        "call": "TF5B"
+    },
+    "173": {
+        "name": "MICRONESIA",
+        "first_worked": "20231021 064100",
+        "band": "15m",
+        "call": "V6SX"
+    },
+    "40": {
+        "name": "CRETE",
+        "first_worked": "20231022 053745",
+        "band": "12m",
+        "call": "SV9TEO"
+    },
+    "191": {
+        "name": "N COOK IS",
+        "first_worked": "20231030 082615",
+        "band": "15m",
+        "call": "E51JAN"
+    },
+    "18": {
+        "name": "AZERBAIJAN",
+        "first_worked": "20231110 180730",
+        "band": "40m",
+        "call": "4K6EH"
+    },
+    "492": {
+        "name": "YEMEN",
+        "first_worked": "20231111 074645",
+        "band": "10m",
+        "call": "7O73T"
+    },
+    "32": {
+        "name": "CEUTA & MELILLA",
+        "first_worked": "20231111 085245",
+        "band": "15m",
+        "call": "EA9ACD"
+    },
+    "511": {
+        "name": "TIMOR-LESTE",
+        "first_worked": "20231112 044145",
+        "band": "10m",
+        "call": "4W8X"
+    },
+    "143": {
+        "name": "LAOS",
+        "first_worked": "20231206 062145",
+        "band": "15m",
+        "call": "XW4KV"
+    },
+    "152": {
+        "name": "MACAO",
+        "first_worked": "20231209 024930",
+        "band": "15m",
+        "call": "XX9ET"
+    },
+    "48": {
+        "name": "EASTERN KIRIBATI",
+        "first_worked": "20231211 044215",
+        "band": "15m",
+        "call": "T32TT"
+    },
+    "159": {
+        "name": "MALDIVES",
+        "first_worked": "20231211 231446",
+        "band": "40m",
+        "call": "8Q7PR"
+    },
+    "287": {
+        "name": "SWITZERLAND",
+        "first_worked": "20231214 160000",
+        "band": "20m",
+        "call": "HB9HXX"
+    },
+    "480": {
+        "name": "BURKINA-FASO",
+        "first_worked": "20231215 232145",
+        "band": "20m",
+        "call": "XT2AW"
+    },
+    "298": {
+        "name": "WALLIS & FUTUNA",
+        "first_worked": "20240115 071415",
+        "band": "15m",
+        "call": "FW1JG"
+    },
+    "233": {
+        "name": "GIBRALTAR",
+        "first_worked": "20240120 070700",
+        "band": "15m",
+        "call": "ZB6HJE"
+    },
+    "166": {
+        "name": "MARIANA IS",
+        "first_worked": "20240206 151200",
+        "band": "40m",
+        "call": "KH0"
+    },
+    "522": {
+        "name": "unknown",
+        "first_worked": "20240212 230045",
+        "band": "40m",
+        "call": "Z61DX"
+    },
+    "401": {
+        "name": "ANGOLA",
+        "first_worked": "20240213 065230",
+        "band": "20m",
+        "call": "D2UY"
+    },
+    "172": {
+        "name": "PITCAIRN IS",
+        "first_worked": "20240215 145430",
+        "band": "20m",
+        "call": "VP6MW"
+    },
+    "312": {
+        "name": "CAMBODIA",
+        "first_worked": "20240216 031902",
+        "band": "15m",
+        "call": "XU7AKJ"
+    },
+    "160": {
+        "name": "TONGA",
+        "first_worked": "20240216 163715",
+        "band": "40m",
+        "call": "A31DL"
+    },
+    "286": {
+        "name": "UGANDA",
+        "first_worked": "20240218 000115",
+        "band": "40m",
+        "call": "5X7O"
+    },
+    "202": {
+        "name": "PUERTO RICO",
+        "first_worked": "20240218 013815",
+        "band": "15m",
+        "call": "KP4CR"
+    },
+    "272": {
+        "name": "PORTUGAL",
+        "first_worked": "20240218 234100",
+        "band": "40m",
+        "call": "CT2GQA"
+    },
+    "97": {
+        "name": "ST LUCIA",
+        "first_worked": "20240225 001500",
+        "band": "15m",
+        "call": "J645DS"
+    },
+    "116": {
+        "name": "COLOMBIA",
+        "first_worked": "20240225 031045",
+        "band": "15m",
+        "call": "HK4L"
+    },
+    "22": {
+        "name": "PALAU",
+        "first_worked": "20240301 000615",
+        "band": "15m",
+        "call": "T88GF"
+    },
+    "114": {
+        "name": "ISLE OF MAN",
+        "first_worked": "20240302 120200",
+        "band": "15m",
+        "call": "MD0CCE"
+    },
+    "149": {
+        "name": "AZORES",
+        "first_worked": "20240303 091032",
+        "band": "20m",
+        "call": "CS8ABF"
+    },
+    "91": {
+        "name": "ARUBA",
+        "first_worked": "20240306 002845",
+        "band": "15m",
+        "call": "P4"
+    },
+    "165": {
+        "name": "MAURITIUS IS",
+        "first_worked": "20240309 095745",
+        "band": "12m",
+        "call": "3B8CW"
+    },
+    "88": {
+        "name": "PANAMA",
+        "first_worked": "20240311 022815",
+        "band": "15m",
+        "call": "HP2BWJ"
+    },
+    "464": {
+        "name": "NAMIBIA",
+        "first_worked": "20240317 091330",
+        "band": "10m",
+        "call": "V51CO"
+    },
+    "105": {
+        "name": "GUANTANAMO BAY",
+        "first_worked": "20240330 153545",
+        "band": "15m",
+        "call": "KG4OJT"
+    },
+    "158": {
+        "name": "VANUATU",
+        "first_worked": "20240409 234745",
+        "band": "15m",
+        "call": "YJ0VK"
+    },
+    "95": {
+        "name": "DOMINICA",
+        "first_worked": "20240419 060200",
+        "band": "15m",
+        "call": "J79WTA"
+    },
+    "306": {
+        "name": "BHUTAN",
+        "first_worked": "20240422 002530",
+        "band": "15m",
+        "call": "A52P"
+    },
+    "47": {
+        "name": "EASTER IS",
+        "first_worked": "20240430 145747",
+        "band": "20m",
+        "call": "3G0YA"
+    },
+    "5": {
+        "name": "ALAND IS",
+        "first_worked": "20240501 084615",
+        "band": "15m",
+        "call": "OG2K"
+    },
+    "38": {
+        "name": "COCOS-KEELING IS",
+        "first_worked": "20240502 000930",
+        "band": "10m",
+        "call": "VK9DX"
+    },
+    "489": {
+        "name": "CONWAY REEF",
+        "first_worked": "20240504 041315",
+        "band": "15m",
+        "call": "3D2CCC"
+    },
+    "305": {
+        "name": "BANGLADESH",
+        "first_worked": "20240514 051230",
+        "band": "20m",
+        "call": "S21AF"
+    },
+    "402": {
+        "name": "BOTSWANA",
+        "first_worked": "20240605 160720",
+        "band": "20m",
+        "call": "A2NEW"
+    },
+    "206": {
+        "name": "AUSTRIA",
+        "first_worked": "20240606 090800",
+        "band": "15m",
+        "call": "4U1A"
+    },
+    "7": {
+        "name": "ALBANIA",
+        "first_worked": "20240827 220215",
+        "band": "40m",
+        "call": "ZA5G"
+    },
+    "257": {
+        "name": "MALTA",
+        "first_worked": "20240926 184800",
+        "band": "20m",
+        "call": "9H5RA"
+    },
+    "50": {
+        "name": "MEXICO",
+        "first_worked": "20241002 014715",
+        "band": "10m",
+        "call": "XE2JS"
+    },
+    "203": {
+        "name": "ANDORRA",
+        "first_worked": "20241002 211437",
+        "band": "17m",
+        "call": "C31CT"
+    },
+    "168": {
+        "name": "MARSHALL IS",
+        "first_worked": "20241014 181745",
+        "band": "40m",
+        "call": "V73ML"
+    },
+    "56": {
+        "name": "FERNANDO DE NORONHA",
+        "first_worked": "20241020 051945",
+        "band": "17m",
+        "call": "PX0FF"
+    },
+    "468": {
+        "name": "SWAZILAND",
+        "first_worked": "20241031 225545",
+        "band": "20m",
+        "call": "3DA0DL"
+    },
+    "234": {
+        "name": "S COOK IS",
+        "first_worked": "20241115 030145",
+        "band": "12m",
+        "call": "E51SGC"
+    },
+    "514": {
+        "name": "MONTENEGRO",
+        "first_worked": "20250112 174445",
+        "band": "40m",
+        "call": "4O7CC"
+    },
+    "250": {
+        "name": "ST HELENA IS",
+        "first_worked": "20250113 073545",
+        "band": "15m",
+        "call": "ZD7CTO"
+    },
+    "163": {
+        "name": "PAPUA NEW GUINEA",
+        "first_worked": "20250124 064430",
+        "band": "10m",
+        "call": "P29XZ"
+    },
+    "285": {
+        "name": "US VIRGIN ISLANDS",
+        "first_worked": "20250127 010416",
+        "band": "15m",
+        "call": "KV4T"
+    },
+    "214": {
+        "name": "CORSICA",
+        "first_worked": "20250212 072215",
+        "band": "10m",
+        "call": "TK4BB"
+    },
+    "78": {
+        "name": "HAITI",
+        "first_worked": "20250317 031945",
+        "band": "15m",
+        "call": "HH2K"
+    },
+    "342": {
+        "name": "JORDAN",
+        "first_worked": "20250318 204215",
+        "band": "20m",
+        "call": "JY4CI"
+    },
+    "470": {
+        "name": "TANZANIA",
+        "first_worked": "20250427 174600",
+        "band": "20m",
+        "call": "5H8HZ"
+    },
+    "512": {
+        "name": "CHESTERFIELD IS",
+        "first_worked": "20250505 081000",
+        "band": "20m",
+        "call": "TX9A"
+    },
+    "301": {
+        "name": "W KIRIBATI",
+        "first_worked": "20250609 054745",
+        "band": "15m",
+        "call": "T30TTT"
+    },
+    "379": {
+        "name": "SEYCHELLES",
+        "first_worked": "20250619 172930",
+        "band": "20m",
+        "call": "S79KW"
+    },
+    "181": {
+        "name": "MOZAMBIQUE",
+        "first_worked": "20250711 055400",
+        "band": "15m",
+        "call": "C94RRC"
+    },
+    "106": {
+        "name": "GUERNSEY",
+        "first_worked": "20250728 195100",
+        "band": "20m",
+        "call": "GU4WRP"
+    },
+    "416": {
+        "name": "BENIN",
+        "first_worked": "20250731 212030",
+        "band": "20m",
+        "call": "TY5AD"
+    },
+    "330": {
+        "name": "IRAN",
+        "first_worked": "20250930 162015",
+        "band": "20m",
+        "call": "EP5APP"
+    },
+    "406": {
+        "name": "CAMEROON",
+        "first_worked": "20251010 183930",
+        "band": "20m",
+        "call": "TJ1GD"
+    },
+    "107": {
+        "name": "GUINEA",
+        "first_worked": "2025-11-16 16:28:52",
+        "band": "20m",
+        "call": "3XY3D"
+    }
+}
