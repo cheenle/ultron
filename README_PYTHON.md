@@ -1,10 +1,17 @@
 # ULTRON Python Version 🐍
 
+**Enhanced Python Implementation** - Based on original ULTRON by LU9DCE
+
 **自动化的JTDX/WSJT-X/MSHV控制工具 | Automated JTDX/WSJT-X/MSHV Control Tool**
 
 这是ULTRON的Python重构版本，完全兼容原有的PHP版本功能，同时提供更好的跨平台支持和现代化的代码架构。
 
 This is a Python rewrite of ULTRON, fully compatible with the original PHP version while providing better cross-platform support and modern code architecture.
+
+**🙏 Original Attribution:**
+- **Original Author**: LU9DCE (Eduardo Castillo)  
+- **Original Repository**: https://github.com/lu9dce/ultron
+- **Original Documentation**: https://github.com/lu9dce/ultron/wiki
 
 ## 🚀 主要特性 | Key Features
 
@@ -265,9 +272,11 @@ Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International
 
 ## 🙏 致谢 | Acknowledgments
 
-- **LU9DCE (Eduardo Castillo)** - 原始PHP版本作者 | Original PHP version author
-- **WSJT-X团队** - 优秀的数字模式软件 | Excellent digital mode software
+- **LU9DCE (Eduardo Castillo)** - 原始PHP版本作者 | Original PHP version author and creator of ULTRON
+- **Original ULTRON Project** - 优秀的自动化工具 | Excellent automation tool foundation
+- **WSJT-X团队** - 优秀的数字模式软件 | Excellent digital mode software  
 - **业余无线电社区** - 持续的支持和反馈 | Continuous support and feedback
+- **开源社区** - 使这种增强成为可能 | Open source community that makes enhancements possible
 
 ## 📞 联系方式 | Contact Information
 

@@ -1,20 +1,59 @@
 # ULTRON - Automatic Control of JTDX/WSJT-X/MSHV 📻
 
-**Created by:** https://lu9dce.github.io/
+**Enhanced Version** - Building upon the original ULTRON by LU9DCE
 
-**Copyright:** 2023 Eduardo Castillo  
-
-**Contact:** castilloeduardo@outlook.com.ar  
-
+**Original Created by:** https://lu9dce.github.io/  
+**Original Author:** LU9DCE (Eduardo Castillo)  
+**Original Copyright:** 2023 Eduardo Castillo  
+**Original Contact:** castilloeduardo@outlook.com.ar  
 **License:** https://creativecommons.org/licenses/by-nc-nd/4.0/
 
-**I recommend AUTOSPOT:** https://github.com/lu9dce/autospot
+**📍 Repository Status**: This is an enhanced version that maintains the original PHP implementation while adding Python support and advanced DXCC features.
 
-**EASY FOR WIN DOWNLOAD** : 📥 [Ultron (WIN)](https://drive.google.com/drive/folders/1JYWeMY5giVzscMdtq1dMDu2BknGj-CeX?usp=sharing)
+**🔗 Original Project**: https://github.com/lu9dce/ultron  
+**⚡ I recommend AUTOSPOT**: https://github.com/lu9dce/autospot
 
-**DOWNLOAD** : 📥 [Ultron (Main Branch)](https://github.com/lu9dce/ultron/archive/refs/heads/main.zip)
+**📥 Downloads**: 
+- [Original ULTRON (WIN)](https://drive.google.com/drive/folders/1JYWeMY5giVzscMdtq1dMDu2BknGj-CeX?usp=sharing)
+- [This Enhanced Version](https://github.com/cheenle/ultron/archive/refs/heads/main.zip)
 
-## 🚀 What's New - DXCC & Python Support
+## 📋 About This Enhanced Version
+
+This repository represents a **significant enhancement** of the original ULTRON project by LU9DCE, maintaining full compatibility with the original PHP implementation while adding modern Python support and advanced features.
+
+### 🏗️ What We've Added:
+- **🐍 Complete Python Rewrite**: Modern, cross-platform implementation
+- **📊 Enhanced DXCC Analyzer**: Advanced analysis with caching and statistics  
+- **🔧 Improved Architecture**: Better performance and error handling
+- **📚 Comprehensive Documentation**: Multiple guides and developer resources
+- **🧪 Testing Framework**: Validation tools and test suites
+- **⚡ Performance Optimizations**: Faster processing and memory efficiency
+
+### 🙏 Original Attribution:
+- **Original Concept & PHP Implementation**: LU9DCE (Eduardo Castillo)
+- **Original Repository**: https://github.com/lu9dce/ultron
+- **Original Documentation**: [GitHub Wiki](https://github.com/lu9dce/ultron/wiki)
+- **License**: Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International
+
+### 🤝 Contributing Back:
+We respect the original author's work and maintain full backward compatibility. This enhanced version aims to extend the capabilities while preserving the core functionality that made ULTRON successful.
+
+## 🚀 What's New - Enhanced DXCC & Python Support
+
+**✨ Enhanced DXCC Features (Beyond Original):**
+- **DXCC Whitelist System**: Target specific DXCC entities for more efficient QSOs
+- **DXCC Analyzer**: Analyze your log files to identify worked/unworked entities
+- **Smart DXCC Targeting**: Automatically prioritize stations from desired countries
+- **Band-specific DXCC**: Different whitelist for different bands
+- **📊 NEW: Python DXCC Analyzer** - Enhanced analysis with caching and statistics
+
+**🐍 New Python Version (Modern Alternative):**
+- **Complete Python rewrite** with enhanced features
+- **Cross-platform compatibility** (Windows, Linux, macOS)
+- **Modern architecture** with better performance
+- **All original PHP features** plus new enhancements
+- **🔧 NEW: Modular design** for easy extension and customization
+- See [README_PYTHON.md](README_PYTHON.md) for Python version details
 
 **✨ Enhanced DXCC Features:**
 - **DXCC Whitelist System**: Target specific DXCC entities for more efficient QSOs
@@ -31,15 +70,24 @@
 - **🔧 NEW: Modular design** for easy extension and customization
 - See [README_PYTHON.md](README_PYTHON.md) for Python version details
 
-"Remember that this software requires knowledge in both operating systems and PHP.
+"Remember that this software requires knowledge in both operating systems and PHP/Python.
 
-I have tested this program on Slackware 15.0, and other colleagues have tested it on Fedora and Debian, as well as on Windows.
+The original ULTRON was tested on Slackware 15.0, Fedora, Debian, and Windows by LU9DCE and colleagues.
 
-I do not guarantee its functionality if the user lacks knowledge."
+This enhanced version maintains compatibility while adding modern features."
 
-## [DONATE](https://www.paypal.com/donate/?hosted_button_id=WHG8FQRMAPA3E)
+## 💖 Support the Projects
 
-Ayuda en español en la [Wiki!](https://github.com/lu9dce/ultron/wiki).
+**🙏 Original Author (LU9DCE):**
+[Support the original ULTRON project](https://www.paypal.com/donate/?hosted_button_id=WHG8FQRMAPA3E)
+
+**⚡ Enhanced Version Development:**
+Contributions welcome! Please submit issues, feature requests, or pull requests to help improve this enhanced version.
+
+**📚 Help Resources:**
+- **Original Spanish Help**: [LU9DCE Wiki](https://github.com/lu9dce/ultron/wiki)
+- **Enhanced English Docs**: See additional documentation files in this repository
+- **Python Version Guide**: [README_PYTHON.md](README_PYTHON.md) - Bilingual Chinese/English
 
 ![ultron](https://pbs.twimg.com/media/F23jEfzWYAApY9t?format=webp&name=small)
 
@@ -313,11 +361,9 @@ dxcc_whitelist = {
 
 "I am not liable for the use or inability to use this software or any other."
 
-## Thinking
+**Original Disclaimer (LU9DCE):** The original author is not liable for the use or inability to use this software.
 
-Ultron was developed by me for me and some friends. It requires the user to have prior knowledge in using PHP and knowing how to use a Windows or Linux terminal. That's no longer up to me, but I guarantee you Ultron works very well. It can operate for years without the need for intervention.
-
-**Why PHP!** Because it runs on any operating system and no compilation is needed. The script is just text with commands. Ultron will execute on any device that can run PHP (PC/CELLPHONE/ROUTER... ETC).
+**Enhanced Version Notice**: This enhanced version maintains the original disclaimer while adding new capabilities. Users should understand both PHP and Python environments depending on which version they choose to use.
 
 ## 🖥️ Supported Platforms
 
@@ -390,3 +436,20 @@ Both PHP and Python versions support:
 | **New Features** | Limited | Regular Updates |
 
 **Recommendation**: New users should start with Python version for better performance and ongoing development support.
+
+## 🤔 About ULTRON Development
+
+**Original Thinking (by LU9DCE):**
+Ultron was originally developed by LU9DCE for personal use and friends. The original version requires knowledge of PHP and terminal usage. The original author guarantees it works very well and can operate for years without intervention.
+
+**Why the Original PHP Version?** Because it runs on any operating system without compilation. The script is just text with commands that executes on any device capable of running PHP (PC/CELLPHONE/ROUTER/etc).
+
+**Enhanced Version Philosophy:**
+This enhanced version respects the original design principles while adding:
+- **Modern Python alternative** for better cross-platform support
+- **Enhanced DXCC capabilities** for more effective DX hunting
+- **Improved documentation** for easier adoption
+- **Active development** for ongoing feature additions
+- **Backward compatibility** with original PHP implementation
+
+We maintain the original's reliability while extending its capabilities for modern amateur radio operations.
