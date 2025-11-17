@@ -14,6 +14,7 @@ This is a Python rewrite of ULTRON, fully compatible with the original PHP versi
 - ✅ **DXCC白名单**: 精确定位未通联实体 | **DXCC Whitelist**: Target unworked entities precisely
 - ✅ **ADIF日志**: 独立日志文件管理 | **ADIF Logging**: Independent log file management
 - ✅ **实时分析**: DXCC通联情况统计 | **Real-time Analysis**: DXCC contact statistics
+- ✅ **智能DXCC分析**: 增强的分析工具 | **Smart DXCC Analysis**: Enhanced analyzer tool
 - ✅ **彩色终端**: 美观的界面输出 | **Color Terminal**: Beautiful interface output
 - ✅ **模块化设计**: 易于扩展和维护 | **Modular Design**: Easy to extend and maintain
 
@@ -141,11 +142,14 @@ HHMMSS  SNR  DF   MODE   ST MESSAGE               - DXCC_ENTITY
 - `XX` - 在排除列表中
 - `Lo` - 信号太弱
 
-### DXCC分析功能
-运行分析模式可查看：
-- 已通联的DXCC实体统计
-- 按波段的通联情况
-- 推荐的DXCC白名单
+### DXCC分析功能 | DXCC Analysis Features
+运行分析模式可查看： | Run analysis mode to view:
+- 已通联的DXCC实体统计 | Worked DXCC entity statistics
+- 按波段的通联情况 | Band-specific contact situations
+- 推荐的DXCC白名单 | Recommended DXCC whitelist
+- **智能实体识别** | **Smart entity recognition**
+- **缓存机制** | **Caching mechanism**
+- **多格式输出** | **Multi-format output**
 
 ## 🔧 高级配置
 

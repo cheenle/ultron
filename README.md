@@ -21,12 +21,14 @@
 - **DXCC Analyzer**: Analyze your log files to identify worked/unworked entities
 - **Smart DXCC Targeting**: Automatically prioritize stations from desired countries
 - **Band-specific DXCC**: Different whitelist for different bands
+- **📊 NEW: Python DXCC Analyzer** - Enhanced analysis with caching and statistics
 
 **🐍 Python Version Available:**
-- Full Python rewrite with enhanced features
-- Cross-platform compatibility (Windows, Linux, macOS)
-- Modern architecture with better performance
-- All original PHP features plus new enhancements
+- **Complete Python rewrite** with enhanced features
+- **Cross-platform compatibility** (Windows, Linux, macOS)
+- **Modern architecture** with better performance
+- **All original PHP features** plus new enhancements
+- **🔧 NEW: Modular design** for easy extension and customization
 - See [README_PYTHON.md](README_PYTHON.md) for Python version details
 
 "Remember that this software requires knowledge in both operating systems and PHP.
@@ -149,7 +151,142 @@ python ultron_dxcc.py
 python dxcc_analyzer.py
 ```
 
-## 📋 DXCC Features Guide
+## 🚀 Quick Start Guide
+
+### 1. Choose Your Version
+**🥇 Recommended: Python Version** (Modern, faster, better error handling)
+**🥈 Alternative: PHP Version** (Classic, stable, original implementation)
+
+### 2. First-Time Setup
+```bash
+# Clone or download ULTRON
+git clone https://github.com/lu9dce/ultron.git
+cd ultron
+
+# Check your radio software (JTDX/WSJT-X/MSHV):
+# - Enable UDP server on port 2237
+# - Disable TX watchdog
+# - Enable ADIF logging
+```
+
+### 3. Configure DXCC (Optional but Recommended)
+```bash
+# Analyze your current DXCC status
+python dxcc_analyzer.py    # Python version
+# OR
+php dxcc_analyzer.php      # PHP version
+
+# Edit whitelist based on recommendations
+nano dxcc_config.py        # Python config
+# OR
+nano dxcc_config.php       # PHP config
+```
+
+### 4. Start ULTRON
+```bash
+# Interactive menu (recommended)
+python run_ultron.py       # Python - cross-platform
+./run_ultron.sh           # PHP - Linux/Mac
+run_ultron.bat            # PHP - Windows
+
+# Direct start
+python ultron_dxcc.py     # Python DXCC version
+# OR
+php robot_dxcc.php        # PHP DXCC version
+```
+
+### 5. Monitor and Enjoy!
+- Watch the colorful terminal output
+- ULTRON automatically handles CQ calls and responses
+- Check `wsjtx_log.adi` for your new contacts
+- Monitor `robot_output.log` for detailed activity
+
+## 🛠️ Troubleshooting
+
+### Common Issues
+
+**🔴 Port 2237 Already in Use**
+```bash
+# Find process using port
+sudo lsof -i :2237
+# Kill process if needed
+sudo kill -9 [PID]
+```
+
+**🔴 No UDP Data Received**
+- Check JTDX/WSJT-X UDP settings (port 2237)
+- Verify firewall allows UDP traffic
+- Ensure "Enable UDP" is checked in radio software
+
+**🔴 DXCC Not Working**
+- Verify `base.json` exists and is valid
+- Check `dxcc_config` file syntax
+- Run analyzer to test DXCC data loading
+
+**🔴 Python Version Won't Start**
+```bash
+# Check Python version
+python --version  # Need 3.7+
+# Install if needed dependencies
+pip install -r requirements.txt
+```
+
+**🔴 PHP Version Errors**
+- Verify PHP with sockets extension: `php -m | grep sockets`
+- Check platform-specific php.ini in `extra/` folder
+- Ensure proper file permissions
+
+### Performance Optimization
+
+**For Better DXCC Performance:**
+- Keep `base.json` updated with current DXCC data
+- Use `worked_dxcc_cache.json` to avoid re-analysis
+- Configure band-specific whitelists for targeted operation
+
+**For Network Performance:**
+- Use wired connection when possible
+- Close unnecessary network applications
+- Consider running on same machine as JTDX/WSJT-X
+
+### Getting Help
+
+**📖 Documentation:**
+- [Detailed Python Guide](README_PYTHON.md)
+- [DXCC Configuration Guide](dxcc_whitelist_guide.md)
+- [Developer Documentation](CLAUDE.md)
+
+**🌐 Community:**
+- Original project: https://github.com/lu9dce/ultron
+- Spanish help: [GitHub Wiki](https://github.com/lu9dce/ultron/wiki)
+
+**📧 Contact:**
+- Original author: castilloeduardo@outlook.com.ar
+- Issues: Create GitHub issue for bugs/feature requests
+
+### DXCC Analysis Tool
+Analyze your log files to find unworked entities:
+- **PHP**: `php dxcc_analyzer.php`
+- **Python**: `python dxcc_analyzer.py` *(NEW - Enhanced with caching)*
+
+**Enhanced Features:**
+- ✅ **Smart Entity Recognition**: Automatic callsign-to-DXCC mapping
+- ✅ **Band-specific Analysis**: Track entities per band
+- ✅ **Whitelist Generation**: Auto-generate PHP/Python whitelist code
+- ✅ **Statistics Export**: Save analysis to `worked_dxcc_cache.json`
+- ✅ **Progress Tracking**: Monitor DXCC achievement over time
+- ✅ **Multi-format Output**: Compatible with both PHP and Python configs
+
+**Usage Examples:**
+```bash
+# Basic analysis
+python dxcc_analyzer.py
+
+# Generate recommendations
+php dxcc_analyzer.php
+
+# View statistics
+cat worked_dxcc_cache.json
+```
 
 ### DXCC Whitelist Configuration
 Edit `dxcc_config.php` (PHP) or `dxcc_config.py` (Python):
@@ -171,17 +308,6 @@ dxcc_whitelist = {
     "284": "BULGARIA"
 }
 ```
-
-### DXCC Analysis Tool
-Analyze your log files to find unworked entities:
-- **PHP**: `php dxcc_analyzer.php`
-- **Python**: `python dxcc_analyzer.py`
-
-Features:
-- Shows worked/unworked DXCC entities
-- Band-specific analysis
-- Generates recommended whitelist
-- Exports statistics in multiple formats
 
 ## ⚠️ Disclaimer
 
@@ -217,6 +343,30 @@ Both PHP and Python versions support:
 - **ADIF Format**: Standard logbook format
 - **Real-time Operation**: Seamless mode switching
 - **Color Terminal**: Enhanced user experience
+
+## 📊 Feature Comparison Matrix
+
+| Feature | PHP Version | Python Version | Notes |
+|---------|-------------|----------------|-------|
+| **Core QSO Automation** | ✅ | ✅ | Both versions fully functional |
+| **DXCC Whitelist** | ✅ | ✅ | Target specific countries/entities |
+| **DXCC Analyzer** | ✅ | ✅⭐ | Python version enhanced with caching |
+| **Band-specific DXCC** | ✅ | ✅ | Different targets per band |
+| **ADIF Logging** | ✅ | ✅ | Independent log management |
+| **Real-time Operation** | ✅ | ✅ | Seamless mode switching |
+| **Cross-platform** | ✅ | ✅⭐ | Better Python compatibility |
+| **Performance** | Good | Excellent⭐ | Python optimized for speed |
+| **Error Handling** | Basic | Advanced⭐ | Python better error recovery |
+| **Memory Usage** | Moderate | Optimized⭐ | Python more efficient |
+| **Modern Architecture** | Classic | Modern⭐ | Python modular design |
+| **Active Development** | Maintenance | Active⭐ | Python version evolving |
+| **New Features** | Limited | Regular⭐ | Python gets updates |
+
+⭐ = **Advantage**
+
+### 🎯 Recommendation
+**New users:** Start with Python version for better performance and ongoing development
+**Existing users:** Both versions work great - choose based on your preference
 
 ## 📚 Additional Resources
 
