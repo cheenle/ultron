@@ -1,0 +1,1094 @@
+{
+    "260": {
+        "name": "MONACO",
+        "priority": "medium",
+        "type": "unworked",
+        "score": 7,
+        "continent": "europe"
+    },
+    "207": {
+        "name": "RODRIGUEZ IS",
+        "priority": "medium",
+        "type": "unworked",
+        "score": 7,
+        "continent": "unknown"
+    },
+    "49": {
+        "name": "EQUATORIAL GUINEA",
+        "priority": "medium",
+        "type": "unworked",
+        "score": 7,
+        "continent": "africa"
+    },
+    "195": {
+        "name": "ANNOBON I.",
+        "priority": "medium",
+        "type": "unworked",
+        "score": 7,
+        "continent": "unknown"
+    },
+    "474": {
+        "name": "TUNISIA",
+        "priority": "medium",
+        "type": "unworked",
+        "score": 7,
+        "continent": "africa"
+    },
+    "107": {
+        "name": "GUINEA",
+        "priority": "medium",
+        "type": "unworked",
+        "score": 7,
+        "continent": "africa"
+    },
+    "24": {
+        "name": "BOUVET",
+        "priority": "medium",
+        "type": "unworked",
+        "score": 7,
+        "continent": "unknown"
+    },
+    "199": {
+        "name": "PETER I IS",
+        "priority": "medium",
+        "type": "unworked",
+        "score": 7,
+        "continent": "unknown"
+    },
+    "117": {
+        "name": "ITU HQ",
+        "priority": "medium",
+        "type": "unworked",
+        "score": 7,
+        "continent": "unknown"
+    },
+    "289": {
+        "name": "UNITED NATIONS HQ",
+        "priority": "medium",
+        "type": "unworked",
+        "score": 7,
+        "continent": "unknown"
+    },
+    "436": {
+        "name": "LIBYA",
+        "priority": "medium",
+        "type": "unworked",
+        "score": 7,
+        "continent": "africa"
+    },
+    "450": {
+        "name": "NIGERIA",
+        "priority": "medium",
+        "type": "unworked",
+        "score": 7,
+        "continent": "africa"
+    },
+    "438": {
+        "name": "MADAGASCAR",
+        "priority": "medium",
+        "type": "unworked",
+        "score": 7,
+        "continent": "africa"
+    },
+    "444": {
+        "name": "MAURITANIA",
+        "priority": "medium",
+        "type": "unworked",
+        "score": 7,
+        "continent": "africa"
+    },
+    "187": {
+        "name": "NIGER",
+        "priority": "medium",
+        "type": "unworked",
+        "score": 7,
+        "continent": "africa"
+    },
+    "483": {
+        "name": "TOGO",
+        "priority": "medium",
+        "type": "unworked",
+        "score": 7,
+        "continent": "africa"
+    },
+    "456": {
+        "name": "SENEGAL",
+        "priority": "medium",
+        "type": "unworked",
+        "score": 7,
+        "continent": "africa"
+    },
+    "82": {
+        "name": "JAMAICA",
+        "priority": "medium",
+        "type": "unworked",
+        "score": 7,
+        "continent": "north_america"
+    },
+    "432": {
+        "name": "LESOTHO",
+        "priority": "medium",
+        "type": "unworked",
+        "score": 7,
+        "continent": "africa"
+    },
+    "400": {
+        "name": "ALGERIA",
+        "priority": "medium",
+        "type": "unworked",
+        "score": 7,
+        "continent": "africa"
+    },
+    "62": {
+        "name": "BARBADOS",
+        "priority": "medium",
+        "type": "unworked",
+        "score": 7,
+        "continent": "north_america"
+    },
+    "129": {
+        "name": "GUYANA",
+        "priority": "medium",
+        "type": "unworked",
+        "score": 7,
+        "continent": "south_america"
+    },
+    "424": {
+        "name": "GHANA",
+        "priority": "medium",
+        "type": "unworked",
+        "score": 7,
+        "continent": "africa"
+    },
+    "482": {
+        "name": "ZAMBIA",
+        "priority": "medium",
+        "type": "unworked",
+        "score": 7,
+        "continent": "africa"
+    },
+    "458": {
+        "name": "SIERRA LEONE",
+        "priority": "medium",
+        "type": "unworked",
+        "score": 7,
+        "continent": "africa"
+    },
+    "414": {
+        "name": "DEM. REPUBLIC OF THE CONGO",
+        "priority": "medium",
+        "type": "unworked",
+        "score": 7,
+        "continent": "africa"
+    },
+    "90": {
+        "name": "TRINIDAD & TOBAGO",
+        "priority": "medium",
+        "type": "unworked",
+        "score": 7,
+        "continent": "north_america"
+    },
+    "506": {
+        "name": "SCARBOROUGH REEF",
+        "priority": "medium",
+        "type": "unworked",
+        "score": 7,
+        "continent": "unknown"
+    },
+    "505": {
+        "name": "PRATAS IS",
+        "priority": "medium",
+        "type": "unworked",
+        "score": 7,
+        "continent": "unknown"
+    },
+    "422": {
+        "name": "THE GAMBIA",
+        "priority": "medium",
+        "type": "unworked",
+        "score": 7,
+        "continent": "africa"
+    },
+    "60": {
+        "name": "BAHAMAS",
+        "priority": "medium",
+        "type": "unworked",
+        "score": 7,
+        "continent": "north_america"
+    },
+    "217": {
+        "name": "SAN FELIX",
+        "priority": "medium",
+        "type": "unworked",
+        "score": 7,
+        "continent": "unknown"
+    },
+    "125": {
+        "name": "JUAN FERNANDEZ",
+        "priority": "medium",
+        "type": "unworked",
+        "score": 7,
+        "continent": "unknown"
+    },
+    "13": {
+        "name": "ANTARCTICA",
+        "priority": "medium",
+        "type": "unworked",
+        "score": 7,
+        "continent": "antarctica"
+    },
+    "446": {
+        "name": "MOROCCO",
+        "priority": "medium",
+        "type": "unworked",
+        "score": 7,
+        "continent": "africa"
+    },
+    "104": {
+        "name": "BOLIVIA",
+        "priority": "medium",
+        "type": "unworked",
+        "score": 7,
+        "continent": "south_america"
+    },
+    "211": {
+        "name": "SABLE ISLAND",
+        "priority": "medium",
+        "type": "unworked",
+        "score": 7,
+        "continent": "unknown"
+    },
+    "252": {
+        "name": "ST PAUL ISLAND",
+        "priority": "medium",
+        "type": "unworked",
+        "score": 7,
+        "continent": "unknown"
+    },
+    "409": {
+        "name": "CAPE VERDE",
+        "priority": "medium",
+        "type": "unworked",
+        "score": 7,
+        "continent": "africa"
+    },
+    "411": {
+        "name": "COMOROS",
+        "priority": "medium",
+        "type": "unworked",
+        "score": 7,
+        "continent": "africa"
+    },
+    "51": {
+        "name": "ERITREA",
+        "priority": "medium",
+        "type": "unworked",
+        "score": 7,
+        "continent": "africa"
+    },
+    "510": {
+        "name": "PALESTINE",
+        "priority": "medium",
+        "type": "unworked",
+        "score": 7,
+        "continent": "unknown"
+    },
+    "434": {
+        "name": "LIBERIA",
+        "priority": "medium",
+        "type": "unworked",
+        "score": 7,
+        "continent": "africa"
+    },
+    "53": {
+        "name": "ETHIOPIA",
+        "priority": "medium",
+        "type": "unworked",
+        "score": 7,
+        "continent": "africa"
+    },
+    "280": {
+        "name": "TURKMENISTAN",
+        "priority": "medium",
+        "type": "unworked",
+        "score": 7,
+        "continent": "asia"
+    },
+    "79": {
+        "name": "GUADELOUPE",
+        "priority": "medium",
+        "type": "unworked",
+        "score": 7,
+        "continent": "unknown"
+    },
+    "169": {
+        "name": "MAYOTTE",
+        "priority": "medium",
+        "type": "unworked",
+        "score": 7,
+        "continent": "unknown"
+    },
+    "516": {
+        "name": "ST. BARTHELEMY",
+        "priority": "medium",
+        "type": "unworked",
+        "score": 7,
+        "continent": "unknown"
+    },
+    "84": {
+        "name": "MARTINIQUE",
+        "priority": "medium",
+        "type": "unworked",
+        "score": 7,
+        "continent": "unknown"
+    },
+    "508": {
+        "name": "AUSTRAL IS",
+        "priority": "medium",
+        "type": "unworked",
+        "score": 7,
+        "continent": "unknown"
+    },
+    "36": {
+        "name": "CLIPPERTON IS",
+        "priority": "medium",
+        "type": "unworked",
+        "score": 7,
+        "continent": "unknown"
+    },
+    "277": {
+        "name": "ST PIERRE & MIQUELON",
+        "priority": "medium",
+        "type": "unworked",
+        "score": 7,
+        "continent": "unknown"
+    },
+    "213": {
+        "name": "SAINT MARTIN",
+        "priority": "medium",
+        "type": "unworked",
+        "score": 7,
+        "continent": "unknown"
+    },
+    "99": {
+        "name": "GLORIOSO IS",
+        "priority": "medium",
+        "type": "unworked",
+        "score": 7,
+        "continent": "unknown"
+    },
+    "124": {
+        "name": "JUAN DE NOVA",
+        "priority": "medium",
+        "type": "unworked",
+        "score": 7,
+        "continent": "unknown"
+    },
+    "276": {
+        "name": "TROMELIN",
+        "priority": "medium",
+        "type": "unworked",
+        "score": 7,
+        "continent": "unknown"
+    },
+    "41": {
+        "name": "CROZET",
+        "priority": "medium",
+        "type": "unworked",
+        "score": 7,
+        "continent": "unknown"
+    },
+    "131": {
+        "name": "KERGUELEN",
+        "priority": "medium",
+        "type": "unworked",
+        "score": 7,
+        "continent": "unknown"
+    },
+    "10": {
+        "name": "AMSTERDAM & ST PAUL",
+        "priority": "medium",
+        "type": "unworked",
+        "score": 7,
+        "continent": "unknown"
+    },
+    "63": {
+        "name": "FRENCH GUIANA",
+        "priority": "medium",
+        "type": "unworked",
+        "score": 7,
+        "continent": "unknown"
+    },
+    "507": {
+        "name": "TEMOTU PROVINCE",
+        "priority": "medium",
+        "type": "unworked",
+        "score": 7,
+        "continent": "unknown"
+    },
+    "251": {
+        "name": "LIECHTENSTEIN",
+        "priority": "medium",
+        "type": "unworked",
+        "score": 7,
+        "continent": "europe"
+    },
+    "120": {
+        "name": "ECUADOR",
+        "priority": "medium",
+        "type": "unworked",
+        "score": 7,
+        "continent": "south_america"
+    },
+    "72": {
+        "name": "DOMINICAN REPUBLIC",
+        "priority": "medium",
+        "type": "unworked",
+        "score": 7,
+        "continent": "north_america"
+    },
+    "216": {
+        "name": "SAN ANDRES & PROVIDENCIA",
+        "priority": "medium",
+        "type": "unworked",
+        "score": 7,
+        "continent": "unknown"
+    },
+    "161": {
+        "name": "MALPELO IS",
+        "priority": "medium",
+        "type": "unworked",
+        "score": 7,
+        "continent": "unknown"
+    },
+    "80": {
+        "name": "HONDURAS",
+        "priority": "medium",
+        "type": "unworked",
+        "score": 7,
+        "continent": "north_america"
+    },
+    "295": {
+        "name": "VATICAN",
+        "priority": "medium",
+        "type": "unworked",
+        "score": 7,
+        "continent": "europe"
+    },
+    "382": {
+        "name": "DJIBOUTI",
+        "priority": "medium",
+        "type": "unworked",
+        "score": 7,
+        "continent": "africa"
+    },
+    "77": {
+        "name": "GRENADA",
+        "priority": "medium",
+        "type": "unworked",
+        "score": 7,
+        "continent": "unknown"
+    },
+    "109": {
+        "name": "GUINEA-BISSAU",
+        "priority": "medium",
+        "type": "unworked",
+        "score": 7,
+        "continent": "africa"
+    },
+    "98": {
+        "name": "ST VINCENT",
+        "priority": "medium",
+        "type": "unworked",
+        "score": 7,
+        "continent": "unknown"
+    },
+    "192": {
+        "name": "OGASAWARA",
+        "priority": "medium",
+        "type": "unworked",
+        "score": 7,
+        "continent": "unknown"
+    },
+    "259": {
+        "name": "SVALBARD IS",
+        "priority": "medium",
+        "type": "unworked",
+        "score": 7,
+        "continent": "unknown"
+    },
+    "118": {
+        "name": "JAN MAYEN",
+        "priority": "medium",
+        "type": "unworked",
+        "score": 7,
+        "continent": "unknown"
+    },
+    "20": {
+        "name": "BAKER, HOWLAND IS",
+        "priority": "medium",
+        "type": "unworked",
+        "score": 7,
+        "continent": "unknown"
+    },
+    "123": {
+        "name": "JOHNSTON IS",
+        "priority": "medium",
+        "type": "unworked",
+        "score": 7,
+        "continent": "unknown"
+    },
+    "174": {
+        "name": "MIDWAY IS",
+        "priority": "medium",
+        "type": "unworked",
+        "score": 7,
+        "continent": "unknown"
+    },
+    "197": {
+        "name": "PALMYRA & JARVIS IS",
+        "priority": "medium",
+        "type": "unworked",
+        "score": 7,
+        "continent": "unknown"
+    },
+    "138": {
+        "name": "KURE ISLAND",
+        "priority": "medium",
+        "type": "unworked",
+        "score": 7,
+        "continent": "unknown"
+    },
+    "9": {
+        "name": "AMERICAN SAMOA",
+        "priority": "medium",
+        "type": "unworked",
+        "score": 7,
+        "continent": "oceania"
+    },
+    "297": {
+        "name": "WAKE IS",
+        "priority": "medium",
+        "type": "unworked",
+        "score": 7,
+        "continent": "unknown"
+    },
+    "182": {
+        "name": "NAVASSA IS",
+        "priority": "medium",
+        "type": "unworked",
+        "score": 7,
+        "continent": "unknown"
+    },
+    "43": {
+        "name": "DESECHEO IS",
+        "priority": "medium",
+        "type": "unworked",
+        "score": 7,
+        "continent": "unknown"
+    },
+    "136": {
+        "name": "PERU",
+        "priority": "medium",
+        "type": "unworked",
+        "score": 7,
+        "continent": "south_america"
+    },
+    "167": {
+        "name": "MARKET REEF",
+        "priority": "medium",
+        "type": "unworked",
+        "score": 7,
+        "continent": "unknown"
+    },
+    "237": {
+        "name": "GREENLAND",
+        "priority": "medium",
+        "type": "unworked",
+        "score": 7,
+        "continent": "north_america"
+    },
+    "222": {
+        "name": "FAROE IS",
+        "priority": "medium",
+        "type": "unworked",
+        "score": 7,
+        "continent": "unknown"
+    },
+    "344": {
+        "name": "DEMOCRATIC PEOPLE'S REPUBLIC OF KOREA",
+        "priority": "medium",
+        "type": "unworked",
+        "score": 7,
+        "continent": "asia"
+    },
+    "517": {
+        "name": "CURACAO",
+        "priority": "medium",
+        "type": "unworked",
+        "score": 7,
+        "continent": "unknown"
+    },
+    "520": {
+        "name": "BONAIRE",
+        "priority": "medium",
+        "type": "unworked",
+        "score": 7,
+        "continent": "unknown"
+    },
+    "519": {
+        "name": "ST EUSTATIUS AND SABA",
+        "priority": "medium",
+        "type": "unworked",
+        "score": 7,
+        "continent": "unknown"
+    },
+    "518": {
+        "name": "SINT MAARTEN",
+        "priority": "medium",
+        "type": "unworked",
+        "score": 7,
+        "continent": "unknown"
+    },
+    "253": {
+        "name": "ST. PETER & ST. PAUL ROCKS",
+        "priority": "medium",
+        "type": "unworked",
+        "score": 7,
+        "continent": "unknown"
+    },
+    "273": {
+        "name": "TRINDADE & MARTIN VAZ ISLANDS",
+        "priority": "medium",
+        "type": "unworked",
+        "score": 7,
+        "continent": "unknown"
+    },
+    "140": {
+        "name": "SURINAME",
+        "priority": "medium",
+        "type": "unworked",
+        "score": 7,
+        "continent": "south_america"
+    },
+    "61": {
+        "name": "FRANZ JOSEF LAND",
+        "priority": "medium",
+        "type": "unworked",
+        "score": 7,
+        "continent": "unknown"
+    },
+    "302": {
+        "name": "WESTERN SAHARA",
+        "priority": "medium",
+        "type": "unworked",
+        "score": 7,
+        "continent": "unknown"
+    },
+    "219": {
+        "name": "SAO TOME & PRINCIPE",
+        "priority": "medium",
+        "type": "unworked",
+        "score": 7,
+        "continent": "africa"
+    },
+    "478": {
+        "name": "EGYPT",
+        "priority": "medium",
+        "type": "unworked",
+        "score": 7,
+        "continent": "africa"
+    },
+    "31": {
+        "name": "C KIRIBATI",
+        "priority": "medium",
+        "type": "unworked",
+        "score": 7,
+        "continent": "oceania"
+    },
+    "490": {
+        "name": "BANABA ISLAND",
+        "priority": "medium",
+        "type": "unworked",
+        "score": 7,
+        "continent": "unknown"
+    },
+    "232": {
+        "name": "SOMALIA",
+        "priority": "medium",
+        "type": "unworked",
+        "score": 7,
+        "continent": "africa"
+    },
+    "278": {
+        "name": "SAN MARINO",
+        "priority": "medium",
+        "type": "unworked",
+        "score": 7,
+        "continent": "europe"
+    },
+    "76": {
+        "name": "GUATEMALA",
+        "priority": "medium",
+        "type": "unworked",
+        "score": 7,
+        "continent": "north_america"
+    },
+    "308": {
+        "name": "COSTA RICA",
+        "priority": "medium",
+        "type": "unworked",
+        "score": 7,
+        "continent": "north_america"
+    },
+    "37": {
+        "name": "COCOS ISLAND",
+        "priority": "medium",
+        "type": "unworked",
+        "score": 7,
+        "continent": "unknown"
+    },
+    "408": {
+        "name": "CENTRAL AFRICAN REPUBLIC",
+        "priority": "medium",
+        "type": "unworked",
+        "score": 7,
+        "continent": "africa"
+    },
+    "412": {
+        "name": "REPUBLIC OF THE CONGO",
+        "priority": "medium",
+        "type": "unworked",
+        "score": 7,
+        "continent": "africa"
+    },
+    "420": {
+        "name": "GABON",
+        "priority": "medium",
+        "type": "unworked",
+        "score": 7,
+        "continent": "africa"
+    },
+    "410": {
+        "name": "CHAD",
+        "priority": "medium",
+        "type": "unworked",
+        "score": 7,
+        "continent": "africa"
+    },
+    "428": {
+        "name": "COTE D'IVOIRE",
+        "priority": "medium",
+        "type": "unworked",
+        "score": 7,
+        "continent": "unknown"
+    },
+    "94": {
+        "name": "ANTIGUA & BARBUDA",
+        "priority": "medium",
+        "type": "unworked",
+        "score": 7,
+        "continent": "unknown"
+    },
+    "249": {
+        "name": "ST KITTS & NEVIS",
+        "priority": "medium",
+        "type": "unworked",
+        "score": 7,
+        "continent": "unknown"
+    },
+    "111": {
+        "name": "HEARD IS",
+        "priority": "medium",
+        "type": "unworked",
+        "score": 7,
+        "continent": "unknown"
+    },
+    "153": {
+        "name": "MACQUARIE IS",
+        "priority": "medium",
+        "type": "unworked",
+        "score": 7,
+        "continent": "unknown"
+    },
+    "147": {
+        "name": "LORD HOWE IS",
+        "priority": "medium",
+        "type": "unworked",
+        "score": 7,
+        "continent": "unknown"
+    },
+    "171": {
+        "name": "MELLISH REEF",
+        "priority": "medium",
+        "type": "unworked",
+        "score": 7,
+        "continent": "unknown"
+    },
+    "189": {
+        "name": "NORFOLK IS",
+        "priority": "medium",
+        "type": "unworked",
+        "score": 7,
+        "continent": "unknown"
+    },
+    "303": {
+        "name": "WILLIS IS",
+        "priority": "medium",
+        "type": "unworked",
+        "score": 7,
+        "continent": "unknown"
+    },
+    "35": {
+        "name": "CHRISTMAS IS",
+        "priority": "medium",
+        "type": "unworked",
+        "score": 7,
+        "continent": "unknown"
+    },
+    "12": {
+        "name": "ANGUILLA",
+        "priority": "medium",
+        "type": "unworked",
+        "score": 7,
+        "continent": "unknown"
+    },
+    "96": {
+        "name": "MONTSERRAT",
+        "priority": "medium",
+        "type": "unworked",
+        "score": 7,
+        "continent": "unknown"
+    },
+    "65": {
+        "name": "BRITISH VIRGIN IS",
+        "priority": "medium",
+        "type": "unworked",
+        "score": 7,
+        "continent": "unknown"
+    },
+    "89": {
+        "name": "TURKS & CAICOS IS",
+        "priority": "medium",
+        "type": "unworked",
+        "score": 7,
+        "continent": "unknown"
+    },
+    "513": {
+        "name": "DUCIE IS",
+        "priority": "medium",
+        "type": "unworked",
+        "score": 7,
+        "continent": "unknown"
+    },
+    "141": {
+        "name": "FALKLAND IS",
+        "priority": "medium",
+        "type": "unworked",
+        "score": 7,
+        "continent": "south_america"
+    },
+    "235": {
+        "name": "SOUTH GEORGIA IS",
+        "priority": "medium",
+        "type": "unworked",
+        "score": 7,
+        "continent": "asia"
+    },
+    "238": {
+        "name": "SOUTH ORKNEY IS",
+        "priority": "medium",
+        "type": "unworked",
+        "score": 7,
+        "continent": "unknown"
+    },
+    "240": {
+        "name": "SOUTH SANDWICH ISLANDS",
+        "priority": "medium",
+        "type": "unworked",
+        "score": 7,
+        "continent": "unknown"
+    },
+    "64": {
+        "name": "BERMUDA",
+        "priority": "medium",
+        "type": "unworked",
+        "score": 7,
+        "continent": "unknown"
+    },
+    "33": {
+        "name": "CHAGOS",
+        "priority": "medium",
+        "type": "unworked",
+        "score": 7,
+        "continent": "unknown"
+    },
+    "11": {
+        "name": "ANDAMAN & NICOBAR IS",
+        "priority": "medium",
+        "type": "unworked",
+        "score": 7,
+        "continent": "unknown"
+    },
+    "142": {
+        "name": "LAKSHADWEEP ISLANDS",
+        "priority": "medium",
+        "type": "unworked",
+        "score": 7,
+        "continent": "unknown"
+    },
+    "204": {
+        "name": "REVILLAGIGEDO",
+        "priority": "medium",
+        "type": "unworked",
+        "score": 7,
+        "continent": "unknown"
+    },
+    "309": {
+        "name": "MYANMAR",
+        "priority": "medium",
+        "type": "unworked",
+        "score": 7,
+        "continent": "asia"
+    },
+    "3": {
+        "name": "AFGHANISTAN",
+        "priority": "medium",
+        "type": "unworked",
+        "score": 7,
+        "continent": "asia"
+    },
+    "333": {
+        "name": "IRAQ",
+        "priority": "medium",
+        "type": "unworked",
+        "score": 7,
+        "continent": "asia"
+    },
+    "384": {
+        "name": "SYRIA",
+        "priority": "medium",
+        "type": "unworked",
+        "score": 7,
+        "continent": "asia"
+    },
+    "145": {
+        "name": "LATVIA",
+        "priority": "medium",
+        "type": "unworked",
+        "score": 7,
+        "continent": "europe"
+    },
+    "86": {
+        "name": "NICARAGUA",
+        "priority": "medium",
+        "type": "unworked",
+        "score": 7,
+        "continent": "north_america"
+    },
+    "74": {
+        "name": "EL SALVADOR",
+        "priority": "medium",
+        "type": "unworked",
+        "score": 7,
+        "continent": "north_america"
+    },
+    "148": {
+        "name": "VENEZUELA",
+        "priority": "medium",
+        "type": "unworked",
+        "score": 7,
+        "continent": "south_america"
+    },
+    "17": {
+        "name": "AVES ISLAND",
+        "priority": "medium",
+        "type": "unworked",
+        "score": 7,
+        "continent": "unknown"
+    },
+    "452": {
+        "name": "ZIMBABWE",
+        "priority": "medium",
+        "type": "unworked",
+        "score": 7,
+        "continent": "africa"
+    },
+    "521": {
+        "name": "SOUTH SUDAN",
+        "priority": "medium",
+        "type": "unworked",
+        "score": 7,
+        "continent": "africa"
+    },
+    "283": {
+        "name": "UK BASES ON CYPRUS",
+        "priority": "medium",
+        "type": "unworked",
+        "score": 7,
+        "continent": "europe"
+    },
+    "205": {
+        "name": "ASCENSION ISLAND",
+        "priority": "medium",
+        "type": "unworked",
+        "score": 7,
+        "continent": "unknown"
+    },
+    "274": {
+        "name": "TRISTAN DA CUNHA & GOUGH IS",
+        "priority": "medium",
+        "type": "unworked",
+        "score": 7,
+        "continent": "unknown"
+    },
+    "69": {
+        "name": "CAYMAN ISLANDS",
+        "priority": "medium",
+        "type": "unworked",
+        "score": 7,
+        "continent": "unknown"
+    },
+    "270": {
+        "name": "TOKELAU IS",
+        "priority": "medium",
+        "type": "unworked",
+        "score": 7,
+        "continent": "oceania"
+    },
+    "34": {
+        "name": "CHATHAM IS",
+        "priority": "medium",
+        "type": "unworked",
+        "score": 7,
+        "continent": "unknown"
+    },
+    "133": {
+        "name": "KERMADEC",
+        "priority": "medium",
+        "type": "unworked",
+        "score": 7,
+        "continent": "unknown"
+    },
+    "16": {
+        "name": "AUCKLAND & CAMPBELL",
+        "priority": "medium",
+        "type": "unworked",
+        "score": 7,
+        "continent": "unknown"
+    },
+    "132": {
+        "name": "PARAGUAY",
+        "priority": "medium",
+        "type": "unworked",
+        "score": 7,
+        "continent": "south_america"
+    },
+    "201": {
+        "name": "PRINCE EDWARD & MARION",
+        "priority": "medium",
+        "type": "unworked",
+        "score": 7,
+        "continent": "unknown"
+    }
+}

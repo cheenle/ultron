@@ -1,0 +1,394 @@
+{
+    "246": {
+        "name": "SOV MILITARY ORDER OF MALTA",
+        "priority": "high",
+        "type": "global",
+        "score": 10,
+        "continent": "europe"
+    },
+    "24": {
+        "name": "BOUVET",
+        "priority": "high",
+        "type": "global",
+        "score": 10,
+        "continent": "unknown"
+    },
+    "199": {
+        "name": "PETER I IS",
+        "priority": "high",
+        "type": "global",
+        "score": 10,
+        "continent": "unknown"
+    },
+    "185": {
+        "name": "SOLOMON ISLANDS",
+        "priority": "high",
+        "type": "global",
+        "score": 10,
+        "continent": "oceania"
+    },
+    "207": {
+        "name": "RODRIGUEZ IS",
+        "priority": "high",
+        "type": "global",
+        "score": 9.5,
+        "continent": "unknown"
+    },
+    "274": {
+        "name": "TRISTAN DA CUNHA & GOUGH IS",
+        "priority": "high",
+        "type": "global",
+        "score": 9.5,
+        "continent": "unknown"
+    },
+    "195": {
+        "name": "ANNOBON I.",
+        "priority": "high",
+        "type": "global",
+        "score": 9,
+        "continent": "unknown"
+    },
+    "176": {
+        "name": "FIJI",
+        "priority": "high",
+        "type": "global",
+        "score": 9,
+        "continent": "oceania"
+    },
+    "190": {
+        "name": "SAMOA",
+        "priority": "high",
+        "type": "global",
+        "score": 9,
+        "continent": "oceania"
+    },
+    "160": {
+        "name": "TONGA",
+        "priority": "high",
+        "type": "global",
+        "score": 9,
+        "continent": "oceania"
+    },
+    "157": {
+        "name": "NAURU",
+        "priority": "high",
+        "type": "global",
+        "score": 9,
+        "continent": "oceania"
+    },
+    "13": {
+        "name": "ANTARCTICA",
+        "priority": "high",
+        "type": "global",
+        "score": 9,
+        "continent": "antarctica"
+    },
+    "188": {
+        "name": "NIUE",
+        "priority": "high",
+        "type": "global",
+        "score": 9,
+        "continent": "oceania"
+    },
+    "162": {
+        "name": "NEW CALEDONIA",
+        "priority": "high",
+        "type": "global",
+        "score": 9,
+        "continent": "oceania"
+    },
+    "175": {
+        "name": "FRENCH POLYNESIA",
+        "priority": "high",
+        "type": "global",
+        "score": 9,
+        "continent": "oceania"
+    },
+    "298": {
+        "name": "WALLIS & FUTUNA",
+        "priority": "high",
+        "type": "global",
+        "score": 9,
+        "continent": "oceania"
+    },
+    "103": {
+        "name": "GUAM",
+        "priority": "high",
+        "type": "global",
+        "score": 9,
+        "continent": "oceania"
+    },
+    "9": {
+        "name": "AMERICAN SAMOA",
+        "priority": "high",
+        "type": "global",
+        "score": 9,
+        "continent": "oceania"
+    },
+    "282": {
+        "name": "TUVALU",
+        "priority": "high",
+        "type": "global",
+        "score": 9,
+        "continent": "oceania"
+    },
+    "301": {
+        "name": "W KIRIBATI",
+        "priority": "high",
+        "type": "global",
+        "score": 9,
+        "continent": "oceania"
+    },
+    "31": {
+        "name": "C KIRIBATI",
+        "priority": "high",
+        "type": "global",
+        "score": 9,
+        "continent": "oceania"
+    },
+    "48": {
+        "name": "EASTERN KIRIBATI",
+        "priority": "high",
+        "type": "global",
+        "score": 9,
+        "continent": "oceania"
+    },
+    "241": {
+        "name": "SOUTH SHETLAND ISLANDS",
+        "priority": "high",
+        "type": "global",
+        "score": 9,
+        "continent": "unknown"
+    },
+    "240": {
+        "name": "SOUTH SANDWICH ISLANDS",
+        "priority": "high",
+        "type": "global",
+        "score": 9,
+        "continent": "unknown"
+    },
+    "49": {
+        "name": "EQUATORIAL GUINEA",
+        "priority": "high",
+        "type": "global",
+        "score": 8,
+        "continent": "africa"
+    },
+    "450": {
+        "name": "NIGERIA",
+        "priority": "high",
+        "type": "global",
+        "score": 8,
+        "continent": "africa"
+    },
+    "444": {
+        "name": "MAURITANIA",
+        "priority": "high",
+        "type": "global",
+        "score": 8,
+        "continent": "africa"
+    },
+    "187": {
+        "name": "NIGER",
+        "priority": "high",
+        "type": "global",
+        "score": 8,
+        "continent": "africa"
+    },
+    "483": {
+        "name": "TOGO",
+        "priority": "high",
+        "type": "global",
+        "score": 8,
+        "continent": "africa"
+    },
+    "458": {
+        "name": "SIERRA LEONE",
+        "priority": "high",
+        "type": "global",
+        "score": 8,
+        "continent": "africa"
+    },
+    "414": {
+        "name": "DEM. REPUBLIC OF THE CONGO",
+        "priority": "high",
+        "type": "global",
+        "score": 8,
+        "continent": "africa"
+    },
+    "411": {
+        "name": "COMOROS",
+        "priority": "high",
+        "type": "global",
+        "score": 8,
+        "continent": "africa"
+    },
+    "434": {
+        "name": "LIBERIA",
+        "priority": "high",
+        "type": "global",
+        "score": 8,
+        "continent": "africa"
+    },
+    "382": {
+        "name": "DJIBOUTI",
+        "priority": "high",
+        "type": "global",
+        "score": 8,
+        "continent": "africa"
+    },
+    "109": {
+        "name": "GUINEA-BISSAU",
+        "priority": "high",
+        "type": "global",
+        "score": 8,
+        "continent": "africa"
+    },
+    "408": {
+        "name": "CENTRAL AFRICAN REPUBLIC",
+        "priority": "high",
+        "type": "global",
+        "score": 8,
+        "continent": "africa"
+    },
+    "412": {
+        "name": "REPUBLIC OF THE CONGO",
+        "priority": "high",
+        "type": "global",
+        "score": 8,
+        "continent": "africa"
+    },
+    "420": {
+        "name": "GABON",
+        "priority": "high",
+        "type": "global",
+        "score": 8,
+        "continent": "africa"
+    },
+    "410": {
+        "name": "CHAD",
+        "priority": "high",
+        "type": "global",
+        "score": 8,
+        "continent": "africa"
+    },
+    "293": {
+        "name": "VIETNAM",
+        "priority": "medium",
+        "type": "global",
+        "score": 7.5,
+        "continent": "asia"
+    },
+    "18": {
+        "name": "AZERBAIJAN",
+        "priority": "medium",
+        "type": "global",
+        "score": 7.5,
+        "continent": "asia"
+    },
+    "75": {
+        "name": "GEORGIA",
+        "priority": "medium",
+        "type": "global",
+        "score": 7.5,
+        "continent": "asia"
+    },
+    "315": {
+        "name": "SRI LANKA",
+        "priority": "medium",
+        "type": "global",
+        "score": 7.5,
+        "continent": "asia"
+    },
+    "336": {
+        "name": "ISRAEL",
+        "priority": "medium",
+        "type": "global",
+        "score": 7.5,
+        "continent": "asia"
+    },
+    "492": {
+        "name": "YEMEN",
+        "priority": "medium",
+        "type": "global",
+        "score": 7.5,
+        "continent": "asia"
+    },
+    "348": {
+        "name": "KUWAIT",
+        "priority": "medium",
+        "type": "global",
+        "score": 7.5,
+        "continent": "asia"
+    },
+    "299": {
+        "name": "WEST MALAYSIA",
+        "priority": "medium",
+        "type": "global",
+        "score": 7.5,
+        "continent": "asia"
+    },
+    "46": {
+        "name": "EAST MALAYSIA",
+        "priority": "medium",
+        "type": "global",
+        "score": 7.5,
+        "continent": "asia"
+    },
+    "369": {
+        "name": "NEPAL",
+        "priority": "medium",
+        "type": "global",
+        "score": 7.5,
+        "continent": "asia"
+    },
+    "381": {
+        "name": "SINGAPORE",
+        "priority": "medium",
+        "type": "global",
+        "score": 7.5,
+        "continent": "asia"
+    },
+    "370": {
+        "name": "OMAN",
+        "priority": "medium",
+        "type": "global",
+        "score": 7.5,
+        "continent": "asia"
+    },
+    "306": {
+        "name": "BHUTAN",
+        "priority": "medium",
+        "type": "global",
+        "score": 7.5,
+        "continent": "asia"
+    },
+    "376": {
+        "name": "QATAR",
+        "priority": "medium",
+        "type": "global",
+        "score": 7.5,
+        "continent": "asia"
+    },
+    "304": {
+        "name": "BAHRAIN",
+        "priority": "medium",
+        "type": "global",
+        "score": 7.5,
+        "continent": "asia"
+    },
+    "237": {
+        "name": "GREENLAND",
+        "priority": "medium",
+        "type": "global",
+        "score": 7.5,
+        "continent": "north_america"
+    },
+    "339": {
+        "name": "JAPAN",
+        "priority": "medium",
+        "type": "band_specific",
+        "score": 6,
+        "continent": "asia"
+    }
+}

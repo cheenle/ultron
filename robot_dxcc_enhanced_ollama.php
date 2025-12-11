@@ -1,6 +1,6 @@
 <?php
 /*
- * ULTRON - Enhanced Version with DXCC Targeting
+ * ULTRON - Enhanced Version with DXCC Targeting and Auto-Update Whitelist
  *
  * Created by: LU9DCE
  * Copyright: 2023 Eduardo Castillo
@@ -8,10 +8,12 @@
  * License: Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International
  *
  * Enhanced by: 心流 CLI
- * Enhancement: DXCC targeting functionality
+ * Enhancement: DXCC targeting functionality + Auto-update whitelist system + Ollama AI integration
  */
 error_reporting(0);
 date_default_timezone_set("UTC");
+
+// 全局变量初始化
 $sendcq = "0";
 $zz = "   ";
 $rxrx = "0";
@@ -27,47 +29,56 @@ static $iaia;
 static $exclu;
 static $tropa;
 $mica = str_repeat("#", 78);
-$version = "LR-230925-DXCC";
+$version = "LR-231118-AUTO-WL-AI-BATCH";
 $portrx = "";
 $filename = __DIR__ . '/wsjtx_log.adi';
 
-// 引入共享数据处理
-if (file_exists('jtdx_shared_data.php')) {
-    require_once 'jtdx_shared_data.php';
+// 批量处理相关变量
+$decoded_signals_buffer = array();  // 解码信号缓冲区
+$last_batch_process_time = time();  // 上次批量处理时间
+$batch_process_interval = 15;       // 批量处理时间间隔（秒）
+$last_time_processed = array();     // 记录已处理的时间戳
+
+// 加载白名单管理器
+require_once 'whitelist_manager.php';
+$whitelist_manager = new DXCCWhitelistManager(__DIR__);
+
+// 加载Ollama增强的DXCC决策器
+require_once 'ollama_dxcc_decision_maker.php';
+$ollama_decision_maker = new OllamaDXCCDecisionMaker($whitelist_manager);
+
+// 验证白名单文件
+$validation_issues = $whitelist_manager->validateWhitelistFiles();
+if (!empty($validation_issues)) {
+    echo fg("⚠️  白名单文件验证失败:", 1);
+    foreach ($validation_issues as $issue) {
+        echo fg("  - $issue", 1);
+    }
+    echo fg("正在尝试使用备份配置...", 3);
     
-    // 更新共享配置
-    if (isset($decall)) {
-        $jtdx_shared_data->setConfig([
-            'decall' => $decall,
-            'software' => 'JTDX',
-            'mode' => $mode ?? 'FT8',
-            'band' => $band ?? '20m'
-        ]);
+    // 如果验证失败，回退到旧的配置系统
+    if (file_exists('dxcc_config.php')) {
+        include 'dxcc_config.php';
+        $use_new_system = false;
+    } else {
+        die(fg("❌ 无法加载白名单配置", 1));
     }
 } else {
-    // 如果没有共享数据文件，定义为null以避免错误
-    $jtdx_shared_data = null;
+    $use_new_system = true;
+    echo fg("✅ 白名单系统加载成功", 2);
 }
 
-// 加载DXCC配置文件
-if (file_exists('dxcc_config.php')) {
-    include 'dxcc_config.php';
-    
-    // 如果配置文件中没有定义，设置默认值
-    if (!isset($dxcc_whitelist_only)) {
-        $dxcc_whitelist_only = 0;  // 默认为0（优先模式），设置为1则只响应白名单
-    }
-    if (!isset($dxcc_whitelist)) {
-        $dxcc_whitelist = array();
-    }
-    if (!isset($band_whitelist)) {
-        $band_whitelist = array();
-    }
+// 加载配置
+if ($use_new_system) {
+    // 使用新的白名单系统
+    $dxcc_whitelist_only = 1; // 默认使用白名单专有模式
+    $dxcc_whitelist = $whitelist_manager->loadWhitelist(); // 全球白名单
+    $band_whitelist = array(); // 波段白名单将在需要时动态加载
 } else {
-    // 默认设置
-    $dxcc_whitelist_only = 0;  // 默认为0（优先模式）
-    $dxcc_whitelist = array();
-    $band_whitelist = array();
+    // 回退到旧系统
+    if (!isset($dxcc_whitelist_only)) $dxcc_whitelist_only = 0;
+    if (!isset($dxcc_whitelist)) $dxcc_whitelist = array();
+    if (!isset($band_whitelist)) $band_whitelist = array();
 }
 
 // 加载微信通知配置
@@ -88,10 +99,29 @@ if (file_exists('wechat_config.php')) {
     echo fg("ℹ️  未找到微信通知配置文件", 8);
 }
 
+// 初始化日志文件
 if (!file_exists($filename)) {
     file_put_contents($filename, '');
 }
 $adix = realpath($filename);
+
+// 显示系统状态
+echo fg("🚀 ULTRON 增强版 - AI驱动的DXCC通联系统", 2);
+echo fg("📋 版本: $version", 6);
+echo fg("🎯 白名单模式: " . ($dxcc_whitelist_only ? "白名单专有" : "优先白名单"), 3);
+
+// 检查Ollama服务
+$ollama_available = $ollama_decision_maker->getAnalyzer()->isAvailable();
+echo fg("🤖 Ollama AI服务: " . ($ollama_available ? "可用" : "不可用"), $ollama_available ? 2 : 1);
+
+// 显示白名单统计
+if ($use_new_system) {
+    $stats = $whitelist_manager->getWhitelistStats();
+    echo fg("📊 全球白名单: " . $stats['global'] . " 个实体", 6);
+    echo fg("📊 已通联缓存: " . $stats['worked'] . " 个实体", 6);
+}
+
+echo $mica . "\n";
 
 function fg($text, $color)
 {
@@ -360,14 +390,6 @@ function sendcq()
     fclose($fp);
     $sendcq = "1";
     
-    // 更新共享状态
-    if (isset($jtdx_shared_data)) {
-        $jtdx_shared_data->updateStatus([
-            'cq_active' => true,
-            'current_target' => $dxc
-        ]);
-    }
-    
     return $sendcq;
 }
 
@@ -503,23 +525,8 @@ if (date("H:i") === "00:00") {
 }
 $qq = "$robot $soft = $sendcq-" . substr($tempo, -4) . "-" . substr($tempu, -4) . "-" . substr($info, -4) . "-" . $mega;
 echo fg($qq, 7);
-// 检查是否是Web API控制的CQ，如果是，则不自动停止
-$web_api_cq_active = false;
-if (isset($jtdx_shared_data)) {
-    $shared_status = $jtdx_shared_data->getStatus();
-    $web_api_cq_active = $shared_status['cq_active'] && !empty($shared_status['current_target']);
-}
-
-// 只有在非Web API控制的情况下，才根据时间超时自动停止
-if ($sendcq == "1" && $info > $tempu && !$web_api_cq_active) {
+if ($sendcq == "1" && $info > $tempu) {
     goto dog;
-}
-// 如果是Web API控制的CQ，即使超时也不自动停止
-if ($sendcq == "1" && $info > $tempu && $web_api_cq_active) {
-    // 更新超时时间，让Web API控制的CQ可以持续
-    $tempo = time();
-    $tempu = $tempo + 90;
-    echo fg("$robot Web API controlled CQ - extended timeout", 6);
 }
 $txw = date("i");
 if (($txw == "00") || ($txw == "30")) {
@@ -674,7 +681,7 @@ $lowd = hex2bin($low);
 $con = $con + 2;
 $off = substr($lee, $con, 2);
 $offd = hex2bin($off);
-goto ptex;
+goto store_signal;
 
 utex:
 $rxrx = $rxrx + 1;
@@ -687,14 +694,6 @@ if ($zz == ">>") {
 }
 $sendcq = "1";
 $zz = "   ";
-
-// 更新共享状态
-if (isset($jtdx_shared_data)) {
-    $jtdx_shared_data->updateStatus([
-        'cq_active' => true,
-        'current_target' => $dxc
-    ]);
-}
 
 echo fg("$robot I see @ $dxc in $qio", 9);
 $tempo = strtotime("now");
@@ -715,14 +714,6 @@ $tempo = "0000";
 $tempu = "0000";
 $dxc = "";
 
-// 更新共享状态
-if (isset($jtdx_shared_data)) {
-    $jtdx_shared_data->updateStatus([
-        'cq_active' => false,
-        'current_target' => ''
-    ]);
-}
-
 echo fg("$robot Halt Tx", 5);
 goto trama;
 
@@ -732,15 +723,10 @@ $exclu[$dxc] = $dxc;
 $dxc = "";
 goto toch;
 
-ptex:
-$mess = rtrim($messaged);
-$lin = explode(" ", $mess);
-$zz = "   ";
-$fg = "8";
-if (sizeof($lin) == 4) {
-    unset($lin[1]);
-    $lin = array_values($lin);
-}
+// 跳过单个信号的处理，因为将在批量处理中处理
+$rxrx = $rxrx + 1;
+$tdx = "0";
+goto trama;
 
 // 获取当前波段信息
 $band_info = "";
@@ -797,22 +783,69 @@ if ($dxcc_id) {
 $should_respond = false;
 $priority_reason = "";
 
-if ($never_worked_global) {
-    // 🏆 超级优先级：从未通联过的DXCC（比任何白名单都重要）
-    $should_respond = true;
-    $priority_reason = "NEW DXCC";
-} elseif ($in_dxcc_whitelist && !$worked_in_band) {
-    // 🥇 优先级1：全局白名单且该波段未通联
-    $should_respond = true;
-    $priority_reason = "GLOBAL WL";
-} elseif ($in_band_whitelist && !$worked_in_band) {
-    // 🥈 优先级2：波段白名单且该波段未通联
-    $should_respond = true;
-    $priority_reason = "BAND WL";
-} elseif ($dxcc_whitelist_only == 0 && !$never_worked_global && !$worked_in_band) {
-    // 🥉 优先级3：优先模式下，其他未通联的DXCC
-    $should_respond = true;
-    $priority_reason = "NEW BAND";
+// 使用Ollama AI进行决策
+global $ollama_decision_maker;
+$ollama_available = false;
+$ollama_decision_result = false;
+
+if (isset($ollama_decision_maker) && $dxcc_info && $dxcc_info['id'] != 'unknown') {
+    try {
+        $ollama_available = $ollama_decision_maker->getAnalyzer()->isAvailable();
+        if ($ollama_available) {
+            // 收集当前解码信号的上下文
+            $all_decoded_signals = array();
+            $signal_context = array(
+                'call' => $lin[1],
+                'dxcc' => $dxcc_info['id'],
+                'message' => $mess,
+                'snr' => $snrd,
+                'time' => $timed,
+                'band' => $band_info
+            );
+            $all_decoded_signals[] = $signal_context;
+            
+            $ollama_decision_result = $ollama_decision_maker->shouldCQForDXCC(
+                $dxcc_info,
+                $band_info,
+                $moded,
+                $freqd,
+                $snrd,
+                $timed,
+                $all_decoded_signals
+            );
+            
+            if ($ollama_decision_result) {
+                $should_respond = true;
+                $priority_reason = "AI-RECOMMENDED";
+            } else {
+                $should_respond = false;
+            }
+        }
+    } catch (Exception $e) {
+        echo fg("🤖 Ollama决策错误: " . $e->getMessage(), 1);
+        $ollama_available = false;
+    }
+}
+
+// 如果Ollama不可用或未启用，则使用传统逻辑
+if (!$ollama_available) {
+    if ($never_worked_global) {
+        // 🏆 超级优先级：从未通联过的DXCC（比任何白名单都重要）
+        $should_respond = true;
+        $priority_reason = "NEW DXCC";
+    } elseif ($in_dxcc_whitelist && !$worked_in_band) {
+        // 🥇 优先级1：全局白名单且该波段未通联
+        $should_respond = true;
+        $priority_reason = "GLOBAL WL";
+    } elseif ($in_band_whitelist && !$worked_in_band) {
+        // 🥈 优先级2：波段白名单且该波段未通联
+        $should_respond = true;
+        $priority_reason = "BAND WL";
+    } elseif ($dxcc_whitelist_only == 0 && !$never_worked_global && !$worked_in_band) {
+        // 🥉 优先级3：优先模式下，其他未通联的DXCC
+        $should_respond = true;
+        $priority_reason = "NEW BAND";
+    }
 }
 
 // 根据优先级决定是否响应
@@ -850,8 +883,10 @@ if (isset($tropa[$lin[1]])) {
     $tropa[$lin[1]] = $qio;
 }
 
-if ($led) {
-    shell_exec($ledvon);
+if (isset($led)) {
+    if ($led) {
+        shell_exec($ledvon);
+    }
 }
 
 $modedx = trim($moded);
@@ -901,8 +936,10 @@ if ($should_respond && isset($priority_reason)) {
     $qq .= " [WL]";
 }
 
-if ($led) {
-    shell_exec($ledvoff);
+if (isset($led)) {
+    if ($led) {
+        shell_exec($ledvoff);
+    }
 }
 
 // 实时DXCC活动检测 - 发现未通联DXCC立即通知
@@ -924,86 +961,17 @@ if ($dxcc_notifier && isset($lin[1]) && $lin[1] != '' && $lin[1] != 'CQ') {
     }
 }
 
-// 保存解码信息到共享数据
-if ($jtdx_shared_data) {
-    $decode_data = [
-        'time' => $timed ?? date('His'),
-        'snr' => $snrd ?? '--',
-        'deltaF' => $deltafd ?? '0',
-        'mode' => $modedx ?? 'FT8',
-        'status' => $zz ?? '  ',
-        'message' => $messaged ?? '',
-        'dxcc' => $qio ?? 'Unknown',
-        'band' => $band_info ?? 'unknown',
-        'priority_reason' => $priority_reason ?? '',
-        'call' => $lin[1] ?? ''
-    ];
-    
-    $jtdx_shared_data->addDecode($decode_data);
-}
-
 echo fg($qq, $fg);
 
-// 检查是否有来自Web API的CQ请求，如果是，则不自动停止发射
-$web_api_cq_active = false;
-if (isset($jtdx_shared_data)) {
-    $shared_status = $jtdx_shared_data->getStatus();
-    $web_api_cq_active = $shared_status['cq_active'] && !empty($shared_status['current_target']);
-}
-
 // 只有在不是Web API控制的CQ时，才在目标台站回应时自动停止发射
-if ($lin[0] != $decalld && $lin[0] != "CQ" && $lin[1] == $dxc && ($lin[2] != "73" || $lin[2] != "RR73") && !$web_api_cq_active) {
+if ($lin[0] != $decalld && $lin[0] != "CQ" && $lin[1] == $dxc && ($lin[2] != "73" || $lin[2] != "RR73")) {
     echo fg("$robot Busy?", 4);
     $dxc = "";
     goto toch;
 }
-// 如果是Web API控制的CQ，当目标台站回应时，显示消息但不自动停止
-if ($lin[0] != $decalld && $lin[0] != "CQ" && $lin[1] == $dxc && ($lin[2] != "73" || $lin[2] != "RR73") && $web_api_cq_active) {
-    echo fg("$robot $lin[1] responded to CQ (Web API controlled, not auto-stopping)", 6);
-}
 if ($lin[0] == $decalld && $lin[2] == "73") {
     echo fg("$robot Qso confirmed successfully", 10);
     $mega = $mega + 1;
-    
-    // 检查是否是Web API控制的CQ
-    $web_api_cq_active = false;
-    if (isset($jtdx_shared_data)) {
-        $shared_status = $jtdx_shared_data->getStatus();
-        $web_api_cq_active = $shared_status['cq_active'] && !empty($shared_status['current_target']);
-    }
-    
-    // 检查是否是用户手动停止的CQ（通过API），如果是手动停止，则更新状态
-    $manual_stop_requested = false;
-    if (isset($jtdx_shared_data)) {
-        $shared_status = $jtdx_shared_data->getStatus();
-        $manual_stop_requested = !$shared_status['cq_active'] && !empty($shared_status['current_target']);
-    }
-    
-    // 只有在不是Web API控制的CQ时才自动停止
-    if (!$web_api_cq_active) {
-        $sendcq = "0";
-        $tempo = "0000";
-        $tempu = "0000";
-        
-        // 更新共享状态
-        if (isset($jtdx_shared_data)) {
-            $jtdx_shared_data->updateStatus([
-                'cq_active' => false,
-                'current_target' => ''
-            ]);
-        }
-    } else {
-        // 如果是Web API控制的CQ，但用户手动停止了，也要停止
-        if ($manual_stop_requested) {
-            $sendcq = "0";
-            $tempo = "0000";
-            $tempu = "0000";
-            
-            echo fg("$robot CQ stopped by manual request", 6);
-        } else {
-            echo fg("$robot Web API controlled CQ - not auto-stopping", 6);
-        }
-    }
     
     // 检查是否是新的DXCC实体并发送微信通知
     if ($dxcc_notifier && isset($lin[1])) {
@@ -1038,31 +1006,13 @@ if ($lin[0] == $decalld && $lin[2] == "73") {
     
     goto toch;
 }
-// 检查是否是Web API控制的CQ（手动操作优先）
-$web_api_cq_active = false;
-$web_api_target = '';
-if (isset($jtdx_shared_data)) {
-    $shared_status = $jtdx_shared_data->getStatus();
-    $web_api_cq_active = $shared_status['cq_active'];
-    $web_api_target = $shared_status['current_target'];
+if ($lin[0] == $decalld && $lin[2] != "73" && $sendcq == "0") {
+    echo fg("$robot Reply? @ $lin[1]", 6);
+    $zz = ">>";
 }
-
-// 优先处理Web API控制的CQ操作
-if ($web_api_cq_active && !empty($web_api_target)) {
-    // 使用Web API指定的目标，不执行自动响应
-    $dxc = $web_api_target;  // 确保目标是Web API设置的
-    $sendcq = "1";           // 确保CQ状态为开启
-    // 不执行自动响应逻辑
-} else {
-    // 非Web API控制时，执行原始的自动响应逻辑
-    if ($lin[0] == $decalld && $lin[2] != "73" && $sendcq == "0") {
-        echo fg("$robot Reply? @ $lin[1]", 6);
-        $zz = ">>";
-    }
-    if ($zz == ">>" && $sendcq == "0") {
-        $dxc = $lin[1];
-        goto tcua;
-    }
+if ($zz == ">>" && $sendcq == "0") {
+    $dxc = $lin[1];
+    goto tcua;
 }
 goto utex;
 
@@ -1210,41 +1160,6 @@ while (true) {
             echo fg("$robot LED control will not be activated", 4);
             $led = false;
         }
-        
-        // 检查共享数据中的CQ请求（从Web界面API设置）
-        if (isset($jtdx_shared_data)) {
-            $shared_status = $jtdx_shared_data->getStatus();
-            if ($shared_status['cq_active'] && !empty($shared_status['current_target'])) {
-                // 如果API设置了CQ，但本地状态未设置，同步状态
-                if ($sendcq != "1" || $dxc != $shared_status['current_target']) {
-                    $dxc = $shared_status['current_target'];
-                    $sendcq = "1";
-                    $tempo = time();
-                    $tempu = $tempo + 90; // 90秒后停止
-                    echo fg("$robot CQ started via Web API for $dxc", 9);
-                }
-                // 对于Web API控制的CQ，确保定期发送CQ消息
-                // 设置标志以便在适当位置调用sendcq()
-                $web_api_controlled_cq = true;
-            } elseif (!$shared_status['cq_active'] && $sendcq == "1") {
-                // 如果API停止了CQ，但本地仍在发送，同步状态
-                $sendcq = "0";
-                $dxc = "";
-                $tempo = "0000";
-                $tempu = "0000";
-                echo fg("$robot CQ stopped via Web API", 5);
-                $web_api_controlled_cq = false;
-            } else {
-                $web_api_controlled_cq = false;
-            }
-        }
-        
-        // 如果是Web API控制的CQ，确保系统处于正确的状态以发送CQ
-        if ($sendcq == "1" && !empty($dxc) && isset($web_api_controlled_cq) && $web_api_controlled_cq) {
-            // 检查是否需要重新发送CQ（通常CQ消息发送后需要重新发送）
-            // 设置标志让系统重新进入tcua流程
-        }
-        
         goto contr;
     }
 }
@@ -1256,9 +1171,327 @@ $datosa = procqso($datos);
 $datosa = procqso($datos);
 $datosb = genadi($datosa);
 $datosc = $datosb[0];
-qsotovar($datosa[0]);
+$qsodata = qsotovar($datosa[0]);
+// 使用返回的数组中的call值
+$call = isset($qsodata['call']) ? $qsodata['call'] : '';
 file_put_contents($adix, $datosc . "\n", FILE_APPEND);
-$contents .= $call . " ";
+global $contents; // 确保$contents是全局变量
+if (!empty($call)) {
+    $contents .= $call . " ";
+}
 echo fg("$robot $soft Register a contact in log for $dxc", 10);
+goto trama;
+
+// 批量处理解码信号
+process_batch:
+
+// 检查是否已达到批量处理时间间隔
+$current_time = time();
+if (($current_time - $last_batch_process_time) < $batch_process_interval) {
+    goto trama;  // 如果未达到处理间隔，继续等待
+}
+
+// 重置上次处理时间
+$last_batch_process_time = $current_time;
+
+if (!empty($decoded_signals_buffer)) {
+    echo fg("🔄 批量处理 " . count($decoded_signals_buffer) . " 个信号 (15秒内)", 6);
+    
+    // 记录批量处理日志
+    $timestamp = date('Y-m-d H:i:s');
+    $log_entry = "[$timestamp] BATCH PROCESSING: Processing " . count($decoded_signals_buffer) . " signals\n";
+    file_put_contents('batch_processing.log', $log_entry, FILE_APPEND | LOCK_EX);
+    
+    // 使用AI模型对整个批次进行分析和决策
+    global $ollama_decision_maker;
+    
+    // 按时间分组处理信号
+    $signals_by_time = array();
+    foreach ($decoded_signals_buffer as $signal) {
+        $time_key = $signal['time'];
+        if (!isset($signals_by_time[$time_key])) {
+            $signals_by_time[$time_key] = array();
+        }
+        $signals_by_time[$time_key][] = $signal;
+    }
+    
+    // 对每个时间点的信号进行AI分析
+    foreach ($signals_by_time as $time_key => $signals_at_time) {
+        if (in_array($time_key, $last_time_processed)) {
+            continue;  // 跳过已处理的时间
+        }
+        
+        // 找出最值得响应的信号
+        $best_signal = null;
+        $best_priority = -1;
+        
+        foreach ($signals_at_time as $signal) {
+            $dxcc_info = $signal['dxcc_info'];
+            $band_info = $signal['band_info'];
+            
+            if ($dxcc_info && $dxcc_info['id'] != 'unknown') {
+                // 使用AI进行决策
+                $should_cq = false;
+                $priority = 0;
+                
+                if (isset($ollama_decision_maker)) {
+                    $ollama_available = $ollama_decision_maker->getAnalyzer()->isAvailable();
+                    if ($ollama_available) {
+                        try {
+                            $should_cq = $ollama_decision_maker->shouldCQForDXCC(
+                                $dxcc_info,
+                                $band_info,
+                                $signal['mode'],
+                                $signal['freq'],
+                                $signal['snr'],
+                                $signal['time'],
+                                $signals_at_time
+                            );
+                            
+                            // 根据DXCC稀有度和通联状态设定优先级
+                            if ($should_cq) {
+                                $priority = 10; // AI推荐的信号
+                                if (in_array($dxcc_info['id'], [24, 199, 197, 169, 249, 277])) {
+                                    $priority = 100; // 极稀有DXCC
+                                } elseif (!isset($worked_dxcc[$dxcc_info['id']])) {
+                                    $priority = 50; // 新DXCC
+                                }
+                            }
+                        } catch (Exception $e) {
+                            // 如果AI处理失败，使用传统逻辑
+                            $never_worked_global = !isset($worked_dxcc[$dxcc_info['id']]);
+                            $worked_in_band = false;
+                            if ($band_info && isset($worked_dxcc_bands[$band_info][$dxcc_info['id']])) {
+                                $worked_in_band = true;
+                            }
+                            
+                            $in_dxcc_whitelist = false;
+                            if (!empty($dxcc_whitelist) && $dxcc_info['id']) {
+                                $in_dxcc_whitelist = in_array($dxcc_info['id'], array_keys($dxcc_whitelist));
+                            }
+                            
+                            $in_band_whitelist = false;
+                            if (!empty($band_whitelist) && $band_info && $dxcc_info['id']) {
+                                if (isset($band_whitelist[$band_info])) {
+                                    $in_band_whitelist = in_array($dxcc_info['id'], $band_whitelist[$band_info]);
+                                }
+                            }
+                            
+                            if ($never_worked_global) {
+                                $priority = 50;
+                                $should_cq = true;
+                            } elseif ($in_dxcc_whitelist && !$worked_in_band) {
+                                $priority = 30;
+                                $should_cq = true;
+                            } elseif ($in_band_whitelist && !$worked_in_band) {
+                                $priority = 20;
+                                $should_cq = true;
+                            } else {
+                                $should_cq = false;
+                            }
+                        }
+                    } else {
+                        // Ollama不可用时，使用传统逻辑
+                        $never_worked_global = !isset($worked_dxcc[$dxcc_info['id']]);
+                        $worked_in_band = false;
+                        if ($band_info && isset($worked_dxcc_bands[$band_info][$dxcc_info['id']])) {
+                            $worked_in_band = true;
+                        }
+                        
+                        $in_dxcc_whitelist = false;
+                        if (!empty($dxcc_whitelist) && $dxcc_info['id']) {
+                            $in_dxcc_whitelist = in_array($dxcc_info['id'], array_keys($dxcc_whitelist));
+                        }
+                        
+                        $in_band_whitelist = false;
+                        if (!empty($band_whitelist) && $band_info && $dxcc_info['id']) {
+                            if (isset($band_whitelist[$band_info])) {
+                                $in_band_whitelist = in_array($dxcc_info['id'], $band_whitelist[$band_info]);
+                            }
+                        }
+                        
+                        if ($never_worked_global) {
+                            $priority = 50;
+                        } elseif ($in_dxcc_whitelist && !$worked_in_band) {
+                            $priority = 30;
+                        } elseif ($in_band_whitelist && !$worked_in_band) {
+                            $priority = 20;
+                        }
+                        
+                        $should_cq = ($priority > 0);
+                    }
+                }
+                
+                if ($should_cq && $priority > $best_priority) {
+                    $best_priority = $priority;
+                    $best_signal = $signal;
+                }
+            }
+        }
+        
+        // 如果找到最佳信号，执行响应
+        if ($best_signal) {
+            $lin = explode(" ", $best_signal['message']);
+            if (sizeof($lin) == 4) {
+                unset($lin[1]);
+                $lin = array_values($lin);
+            }
+            
+            $searchfor = $lin[1];
+            $dxcc_info = $best_signal['dxcc_info'];
+            $band_info = $best_signal['band_info'];
+            
+            // 设置响应参数
+            $time = $best_signal['time'];
+            $snrd = $best_signal['snr'];
+            $moded = $best_signal['mode'];
+            $deltafd = $best_signal['deltaf'];
+            $messaged = $best_signal['message'];
+            $qio = $best_signal['dxcc_name'];
+            
+            // 显示最佳信号
+            $modedx = trim($moded);
+            if ($modedx == "`") $modedx = "FST4";
+            if ($modedx == "+") $modedx = "FT4";
+            if ($modedx == "~") $modedx = "FT8";
+            if ($modedx == "$") $modedx = "JT4";
+            if ($modedx == "@") $modedx = "JT9";
+            if ($modedx == "#") $modedx = "JT65";
+            if ($modedx == ":") $modedx = "Q65";
+            if ($modedx == "&") $modedx = "MSK144";
+            
+            $timed = str_pad(substr($time, 0, 6), 6);
+            $snrd = str_pad(substr($snrd, 0, 3), 3);
+            $deltafd = str_pad(substr($deltafd, 0, 4), 4);
+            $moded = str_pad(substr($moded, 0, 4), 4);
+            $messaged = str_pad(substr($messaged, 0, 20), 20);
+            $zz = ">>";
+            $qio = str_pad(substr($qio, 0, 20), 20);
+            $modedx = str_pad(substr($modedx, 0, 6), 6);
+            
+            $band_display = $band_info ? "[$band_info]" : "";
+            $priority_reason = $best_priority >= 100 ? "ULTRA RARE" : ($best_priority >= 50 ? "NEW DXCC" : ($best_priority >= 30 ? "GLOBAL WL" : "BAND WL"));
+            
+            $qq = "$timed  $snrd  $deltafd  $modedx  $zz $messaged - $qio $band_display [$priority_reason]";
+            echo fg($qq, 2);
+            
+            // 设置要响应的DXCC
+            $dxc = $lin[1];
+            $sendcq = "1";
+            $zz = "   ";
+            
+            echo fg("$robot I see @ $dxc in $qio", 9);
+            $tempo = strtotime("now");
+            $tempu = $tempo + 90;
+            
+            // 添加到已处理时间列表
+            $last_time_processed[] = $time_key;
+            if (count($last_time_processed) > 100) { // 防止列表无限增长
+                $last_time_processed = array_slice($last_time_processed, -50);
+            }
+        }
+        
+        // 如果处理了当前时间的信号，跳出循环
+        if ($best_signal) {
+            break;
+        }
+    }
+    
+    // 清空缓冲区
+    $decoded_signals_buffer = array();
+} else {
+    // 即使没有信号，也要检查是否需要响应正在进行的CQ
+    if ($sendcq == "1" && time() > $tempu) {
+        echo fg("$robot $dxc Not respond to the call", 5);
+        $exclu[$dxc] = $dxc;
+        $dxc = "";
+        goto toch;
+    }
+}
+
+goto trama;
+
+// 存储解码信号到缓冲区
+store_signal:
+$mess = rtrim($messaged);
+$lin = explode(" ", $mess);
+if (sizeof($lin) == 4) {
+    unset($lin[1]);
+    $lin = array_values($lin);
+}
+
+// 获取当前波段信息
+$band_info = "";
+if (isset($freqd)) {
+    if ($freqd >= 1800000 && $freqd < 2000000) $band_info = "160m";
+    else if ($freqd >= 3500000 && $freqd < 4000000) $band_info = "80m";
+    else if ($freqd >= 7000000 && $freqd < 7300000) $band_info = "40m";
+    else if ($freqd >= 10100000 && $freqd < 10150000) $band_info = "30m";
+    else if ($freqd >= 14000000 && $freqd < 14350000) $band_info = "20m";
+    else if ($freqd >= 18068000 && $freqd < 18168000) $band_info = "17m";
+    else if ($freqd >= 21000000 && $freqd < 21450000) $band_info = "15m";
+    else if ($freqd >= 24890000 && $freqd < 24990000) $band_info = "12m";
+    else if ($freqd >= 28000000 && $freqd < 29700000) $band_info = "10m";
+}
+
+// 检查是否在白名单中
+$dxcc_info = locate($lin[1]);
+$dxcc_id = $dxcc_info ? $dxcc_info['id'] : null;
+
+// 检查DXCC白名单
+$in_dxcc_whitelist = false;
+if (!empty($dxcc_whitelist) && $dxcc_id) {
+    $in_dxcc_whitelist = in_array($dxcc_id, array_keys($dxcc_whitelist));
+}
+
+// 检查波段白名单
+$in_band_whitelist = false;
+if (!empty($band_whitelist) && $band_info && $dxcc_id) {
+    if (isset($band_whitelist[$band_info])) {
+        $in_band_whitelist = in_array($dxcc_id, $band_whitelist[$band_info]);
+    }
+}
+
+// 检查各种状态
+$never_worked_global = false;
+$worked_in_band = false;
+
+if ($dxcc_id) {
+    $never_worked_global = !isset($worked_dxcc[$dxcc_id]);  // 从未通联过（全局）
+    if ($band_info && isset($worked_dxcc_bands[$band_info][$dxcc_id])) {
+        $worked_in_band = true;  // 该波段已通联
+    }
+}
+
+// 存储信号到缓冲区
+$signal_data = array(
+    'call' => $lin[1],
+    'message' => $messaged,
+    'dxcc_info' => $dxcc_info,
+    'dxcc_name' => $dxcc_info ? $dxcc_info['name'] : 'unknown',
+    'band_info' => $band_info,
+    'freq' => $freqd,
+    'snr' => $snrd,
+    'time' => $timed,
+    'mode' => $moded,
+    'deltaf' => $deltafd,
+    'in_dxcc_whitelist' => $in_dxcc_whitelist,
+    'in_band_whitelist' => $in_band_whitelist,
+    'never_worked_global' => $never_worked_global,
+    'worked_in_band' => $worked_in_band
+);
+
+// 仅存储有意义的信号（CQ、73、RR73、RRR）
+if (sizeof($lin) >= 2 && ($lin[0] == "CQ" || (isset($lin[2]) && ($lin[2] == "73" || $lin[2] == "RR73" || $lin[2] == "RRR")))) {
+    $decoded_signals_buffer[] = $signal_data;
+}
+
+// 限制缓冲区大小，避免内存溢出
+if (count($decoded_signals_buffer) > 100) {
+    $decoded_signals_buffer = array_slice($decoded_signals_buffer, -50); // 保留最近50个信号
+}
+
+$rxrx = $rxrx + 1;
+$tdx = "0";
 goto trama;
 ?>

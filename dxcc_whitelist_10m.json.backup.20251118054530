@@ -1,0 +1,1667 @@
+{
+    "246": {
+        "name": "SOV MILITARY ORDER OF MALTA",
+        "priority": "high",
+        "type": "rare"
+    },
+    "260": {
+        "name": "MONACO",
+        "priority": "high",
+        "type": "rare"
+    },
+    "207": {
+        "name": "RODRIGUEZ IS",
+        "priority": "high",
+        "type": "rare"
+    },
+    "49": {
+        "name": "EQUATORIAL GUINEA",
+        "priority": "high",
+        "type": "rare"
+    },
+    "474": {
+        "name": "TUNISIA",
+        "priority": "high",
+        "type": "rare"
+    },
+    "107": {
+        "name": "GUINEA",
+        "priority": "high",
+        "type": "rare"
+    },
+    "24": {
+        "name": "BOUVET",
+        "priority": "high",
+        "type": "rare"
+    },
+    "199": {
+        "name": "PETER I IS",
+        "priority": "high",
+        "type": "rare"
+    },
+    "117": {
+        "name": "ITU HQ",
+        "priority": "high",
+        "type": "rare"
+    },
+    "289": {
+        "name": "UNITED NATIONS HQ",
+        "priority": "high",
+        "type": "rare"
+    },
+    "436": {
+        "name": "LIBYA",
+        "priority": "high",
+        "type": "rare"
+    },
+    "450": {
+        "name": "NIGERIA",
+        "priority": "high",
+        "type": "rare"
+    },
+    "438": {
+        "name": "MADAGASCAR",
+        "priority": "high",
+        "type": "rare"
+    },
+    "444": {
+        "name": "MAURITANIA",
+        "priority": "high",
+        "type": "rare"
+    },
+    "187": {
+        "name": "NIGER",
+        "priority": "high",
+        "type": "rare"
+    },
+    "483": {
+        "name": "TOGO",
+        "priority": "high",
+        "type": "rare"
+    },
+    "456": {
+        "name": "SENEGAL",
+        "priority": "high",
+        "type": "rare"
+    },
+    "82": {
+        "name": "JAMAICA",
+        "priority": "high",
+        "type": "rare"
+    },
+    "432": {
+        "name": "LESOTHO",
+        "priority": "high",
+        "type": "rare"
+    },
+    "253": {
+        "name": "MALAWI",
+        "priority": "high",
+        "type": "rare"
+    },
+    "448": {
+        "name": "SOMALIA",
+        "priority": "high",
+        "type": "rare"
+    },
+    "486": {
+        "name": "UGANDA",
+        "priority": "high",
+        "type": "rare"
+    },
+    "490": {
+        "name": "ZAMBIA",
+        "priority": "high",
+        "type": "rare"
+    },
+    "494": {
+        "name": "ZIMBABWE",
+        "priority": "high",
+        "type": "rare"
+    },
+    "434": {
+        "name": "KENYA",
+        "priority": "high",
+        "type": "rare"
+    },
+    "297": {
+        "name": "NETHERLANDS ANTILLES",
+        "priority": "high",
+        "type": "rare"
+    },
+    "197": {
+        "name": "PRINCE EDWARD IS",
+        "priority": "high",
+        "type": "rare"
+    },
+    "169": {
+        "name": "TRISTAN DA CUNHA",
+        "priority": "high",
+        "type": "rare"
+    },
+    "249": {
+        "name": "MARIANA IS",
+        "priority": "high",
+        "type": "rare"
+    },
+    "277": {
+        "name": "VANUATU",
+        "priority": "high",
+        "type": "rare"
+    },
+    "155": {
+        "name": "NAURU",
+        "priority": "medium",
+        "type": "band_specific"
+    },
+    "237": {
+        "name": "HAWAII",
+        "priority": "medium",
+        "type": "band_specific"
+    },
+    "229": {
+        "name": "GAMBIA",
+        "priority": "high",
+        "type": "rare"
+    },
+    "428": {
+        "name": "BURUNDI",
+        "priority": "high",
+        "type": "rare"
+    },
+    "478": {
+        "name": "TONGA",
+        "priority": "high",
+        "type": "rare"
+    },
+    "273": {
+        "name": "UNITED NATIONS",
+        "priority": "high",
+        "type": "rare"
+    },
+    "213": {
+        "name": "FED REP OF GERMANY",
+        "priority": "high",
+        "type": "rare"
+    },
+    "261": {
+        "name": "MONGOLIA",
+        "priority": "high",
+        "type": "rare"
+    },
+    "267": {
+        "name": "NORWAY",
+        "priority": "high",
+        "type": "rare"
+    },
+    "271": {
+        "name": "PORTUGAL",
+        "priority": "high",
+        "type": "rare"
+    },
+    "283": {
+        "name": "UNITED STATES",
+        "priority": "high",
+        "type": "rare"
+    },
+    "295": {
+        "name": "UNITED STATES",
+        "priority": "high",
+        "type": "rare"
+    },
+    "309": {
+        "name": "ARGENTINA",
+        "priority": "high",
+        "type": "rare"
+    },
+    "313": {
+        "name": "ARMENIA",
+        "priority": "high",
+        "type": "rare"
+    },
+    "317": {
+        "name": "AZERBAIJAN",
+        "priority": "high",
+        "type": "rare"
+    },
+    "325": {
+        "name": "BELARUS",
+        "priority": "high",
+        "type": "rare"
+    },
+    "329": {
+        "name": "BOSNIA-HERZEGOVINA",
+        "priority": "high",
+        "type": "rare"
+    },
+    "333": {
+        "name": "BRAZIL",
+        "priority": "high",
+        "type": "rare"
+    },
+    "337": {
+        "name": "BULGARIA",
+        "priority": "high",
+        "type": "rare"
+    },
+    "341": {
+        "name": "CANADA",
+        "priority": "high",
+        "type": "rare"
+    },
+    "349": {
+        "name": "CROATIA",
+        "priority": "high",
+        "type": "rare"
+    },
+    "357": {
+        "name": "CYPRUS",
+        "priority": "high",
+        "type": "rare"
+    },
+    "361": {
+        "name": "CZECH REPUBLIC",
+        "priority": "high",
+        "type": "rare"
+    },
+    "365": {
+        "name": "DENMARK",
+        "priority": "high",
+        "type": "rare"
+    },
+    "373": {
+        "name": "ESTONIA",
+        "priority": "high",
+        "type": "rare"
+    },
+    "377": {
+        "name": "FINLAND",
+        "priority": "high",
+        "type": "rare"
+    },
+    "385": {
+        "name": "GEORGIA",
+        "priority": "high",
+        "type": "rare"
+    },
+    "393": {
+        "name": "GREENLAND",
+        "priority": "high",
+        "type": "rare"
+    },
+    "397": {
+        "name": "HUNGARY",
+        "priority": "high",
+        "type": "rare"
+    },
+    "405": {
+        "name": "INDIA",
+        "priority": "high",
+        "type": "rare"
+    },
+    "409": {
+        "name": "IRAN",
+        "priority": "high",
+        "type": "rare"
+    },
+    "413": {
+        "name": "IRAQ",
+        "priority": "high",
+        "type": "rare"
+    },
+    "417": {
+        "name": "IRELAND",
+        "priority": "high",
+        "type": "rare"
+    },
+    "421": {
+        "name": "ISRAEL",
+        "priority": "high",
+        "type": "rare"
+    },
+    "425": {
+        "name": "ITALY",
+        "priority": "high",
+        "type": "rare"
+    },
+    "429": {
+        "name": "JORDAN",
+        "priority": "high",
+        "type": "rare"
+    },
+    "433": {
+        "name": "KAZAKHSTAN",
+        "priority": "high",
+        "type": "rare"
+    },
+    "441": {
+        "name": "LATVIA",
+        "priority": "high",
+        "type": "rare"
+    },
+    "445": {
+        "name": "LEBANON",
+        "priority": "high",
+        "type": "rare"
+    },
+    "449": {
+        "name": "LITHUANIA",
+        "priority": "high",
+        "type": "rare"
+    },
+    "457": {
+        "name": "MALTA",
+        "priority": "high",
+        "type": "rare"
+    },
+    "461": {
+        "name": "MEXICO",
+        "priority": "high",
+        "type": "rare"
+    },
+    "465": {
+        "name": "MOLDOVA",
+        "priority": "high",
+        "type": "rare"
+    },
+    "473": {
+        "name": "SERBIA",
+        "priority": "high",
+        "type": "rare"
+    },
+    "477": {
+        "name": "SLOVAK REPUBLIC",
+        "priority": "high",
+        "type": "rare"
+    },
+    "481": {
+        "name": "SLOVENIA",
+        "priority": "high",
+        "type": "rare"
+    },
+    "485": {
+        "name": "SWEDEN",
+        "priority": "high",
+        "type": "rare"
+    },
+    "493": {
+        "name": "TURKEY",
+        "priority": "high",
+        "type": "rare"
+    },
+    "303": {
+        "name": "AMERICAN SAMOA",
+        "priority": "high",
+        "type": "rare"
+    },
+    "307": {
+        "name": "AUSTRALIA",
+        "priority": "high",
+        "type": "rare"
+    },
+    "311": {
+        "name": "AUSTRIA",
+        "priority": "high",
+        "type": "rare"
+    },
+    "319": {
+        "name": "BARBADOS",
+        "priority": "high",
+        "type": "rare"
+    },
+    "323": {
+        "name": "BELIZE",
+        "priority": "high",
+        "type": "rare"
+    },
+    "331": {
+        "name": "BOLIVIA",
+        "priority": "high",
+        "type": "rare"
+    },
+    "335": {
+        "name": "BOTSWANA",
+        "priority": "high",
+        "type": "rare"
+    },
+    "343": {
+        "name": "CAMEROON",
+        "priority": "high",
+        "type": "rare"
+    },
+    "351": {
+        "name": "COLOMBIA",
+        "priority": "high",
+        "type": "rare"
+    },
+    "355": {
+        "name": "CONGO",
+        "priority": "high",
+        "type": "rare"
+    },
+    "359": {
+        "name": "COSTA RICA",
+        "priority": "high",
+        "type": "rare"
+    },
+    "367": {
+        "name": "DJIBOUTI",
+        "priority": "high",
+        "type": "rare"
+    },
+    "371": {
+        "name": "DOMINICAN REPUBLIC",
+        "priority": "high",
+        "type": "rare"
+    },
+    "383": {
+        "name": "ETHIOPIA",
+        "priority": "high",
+        "type": "rare"
+    },
+    "395": {
+        "name": "GUATEMALA",
+        "priority": "high",
+        "type": "rare"
+    },
+    "399": {
+        "name": "HAITI",
+        "priority": "high",
+        "type": "rare"
+    },
+    "403": {
+        "name": "HONDURAS",
+        "priority": "high",
+        "type": "rare"
+    },
+    "407": {
+        "name": "ICELAND",
+        "priority": "high",
+        "type": "rare"
+    },
+    "411": {
+        "name": "JAMAICA",
+        "priority": "high",
+        "type": "rare"
+    },
+    "415": {
+        "name": "JORDAN",
+        "priority": "high",
+        "type": "rare"
+    },
+    "419": {
+        "name": "KENYA",
+        "priority": "high",
+        "type": "rare"
+    },
+    "423": {
+        "name": "LAOS",
+        "priority": "high",
+        "type": "rare"
+    },
+    "427": {
+        "name": "LIBERIA",
+        "priority": "high",
+        "type": "rare"
+    },
+    "431": {
+        "name": "LIBYA",
+        "priority": "high",
+        "type": "rare"
+    },
+    "435": {
+        "name": "MADAGASCAR",
+        "priority": "high",
+        "type": "rare"
+    },
+    "439": {
+        "name": "MALAWI",
+        "priority": "high",
+        "type": "rare"
+    },
+    "443": {
+        "name": "MALI",
+        "priority": "high",
+        "type": "rare"
+    },
+    "447": {
+        "name": "MAURITANIA",
+        "priority": "high",
+        "type": "rare"
+    },
+    "451": {
+        "name": "MEXICO",
+        "priority": "high",
+        "type": "rare"
+    },
+    "455": {
+        "name": "MOROCCO",
+        "priority": "high",
+        "type": "rare"
+    },
+    "459": {
+        "name": "MOZAMBIQUE",
+        "priority": "high",
+        "type": "rare"
+    },
+    "463": {
+        "name": "NAMIBIA",
+        "priority": "high",
+        "type": "rare"
+    },
+    "467": {
+        "name": "NEPAL",
+        "priority": "high",
+        "type": "rare"
+    },
+    "469": {
+        "name": "NICARAGUA",
+        "priority": "high",
+        "type": "rare"
+    },
+    "471": {
+        "name": "NIGER",
+        "priority": "high",
+        "type": "rare"
+    },
+    "475": {
+        "name": "NIGERIA",
+        "priority": "high",
+        "type": "rare"
+    },
+    "479": {
+        "name": "OMAN",
+        "priority": "high",
+        "type": "rare"
+    },
+    "482": {
+        "name": "PAKISTAN",
+        "priority": "high",
+        "type": "rare"
+    },
+    "484": {
+        "name": "PANAMA",
+        "priority": "high",
+        "type": "rare"
+    },
+    "487": {
+        "name": "PARAGUAY",
+        "priority": "high",
+        "type": "rare"
+    },
+    "488": {
+        "name": "PERU",
+        "priority": "high",
+        "type": "rare"
+    },
+    "491": {
+        "name": "PHILIPPINES",
+        "priority": "high",
+        "type": "rare"
+    },
+    "495": {
+        "name": "QATAR",
+        "priority": "high",
+        "type": "rare"
+    },
+    "498": {
+        "name": "RUSSIA",
+        "priority": "high",
+        "type": "rare"
+    },
+    "500": {
+        "name": "SAUDI ARABIA",
+        "priority": "high",
+        "type": "rare"
+    },
+    "505": {
+        "name": "SINGAPORE",
+        "priority": "high",
+        "type": "rare"
+    },
+    "506": {
+        "name": "SOMALIA",
+        "priority": "high",
+        "type": "rare"
+    },
+    "507": {
+        "name": "SOUTH AFRICA",
+        "priority": "high",
+        "type": "rare"
+    },
+    "510": {
+        "name": "SUDAN",
+        "priority": "high",
+        "type": "rare"
+    },
+    "513": {
+        "name": "SWITZERLAND",
+        "priority": "high",
+        "type": "rare"
+    },
+    "516": {
+        "name": "TANZANIA",
+        "priority": "high",
+        "type": "rare"
+    },
+    "517": {
+        "name": "THAILAND",
+        "priority": "high",
+        "type": "rare"
+    },
+    "518": {
+        "name": "TOGO",
+        "priority": "high",
+        "type": "rare"
+    },
+    "519": {
+        "name": "TONGA",
+        "priority": "high",
+        "type": "rare"
+    },
+    "520": {
+        "name": "TRINIDAD AND TOBAGO",
+        "priority": "high",
+        "type": "rare"
+    },
+    "521": {
+        "name": "TUNISIA",
+        "priority": "high",
+        "type": "rare"
+    },
+    "523": {
+        "name": "UGANDA",
+        "priority": "high",
+        "type": "rare"
+    },
+    "524": {
+        "name": "UNITED ARAB EMIRATES",
+        "priority": "high",
+        "type": "rare"
+    },
+    "527": {
+        "name": "URUGUAY",
+        "priority": "high",
+        "type": "rare"
+    },
+    "528": {
+        "name": "UZBEKISTAN",
+        "priority": "high",
+        "type": "rare"
+    },
+    "529": {
+        "name": "VANUATU",
+        "priority": "high",
+        "type": "rare"
+    },
+    "530": {
+        "name": "VENEZUELA",
+        "priority": "high",
+        "type": "rare"
+    },
+    "531": {
+        "name": "VIETNAM",
+        "priority": "high",
+        "type": "rare"
+    },
+    "532": {
+        "name": "WESTERN SAMOA",
+        "priority": "high",
+        "type": "rare"
+    },
+    "533": {
+        "name": "YEMEN",
+        "priority": "high",
+        "type": "rare"
+    },
+    "534": {
+        "name": "YUGOSLAVIA",
+        "priority": "high",
+        "type": "rare"
+    },
+    "535": {
+        "name": "ZAIRE",
+        "priority": "high",
+        "type": "rare"
+    },
+    "536": {
+        "name": "ZAMBIA",
+        "priority": "high",
+        "type": "rare"
+    },
+    "537": {
+        "name": "ZIMBABWE",
+        "priority": "high",
+        "type": "rare"
+    },
+    "538": {
+        "name": "AFGHANISTAN",
+        "priority": "high",
+        "type": "rare"
+    },
+    "539": {
+        "name": "ALBANIA",
+        "priority": "high",
+        "type": "rare"
+    },
+    "540": {
+        "name": "ALGERIA",
+        "priority": "high",
+        "type": "rare"
+    },
+    "541": {
+        "name": "ANDORRA",
+        "priority": "high",
+        "type": "rare"
+    },
+    "542": {
+        "name": "ANGOLA",
+        "priority": "high",
+        "type": "rare"
+    },
+    "543": {
+        "name": "ANTIGUA AND BARBUDA",
+        "priority": "high",
+        "type": "rare"
+    },
+    "544": {
+        "name": "ARGENTINA",
+        "priority": "high",
+        "type": "rare"
+    },
+    "545": {
+        "name": "ARMENIA",
+        "priority": "high",
+        "type": "rare"
+    },
+    "546": {
+        "name": "AUSTRALIA",
+        "priority": "high",
+        "type": "rare"
+    },
+    "547": {
+        "name": "AUSTRIA",
+        "priority": "high",
+        "type": "rare"
+    },
+    "548": {
+        "name": "AZERBAIJAN",
+        "priority": "high",
+        "type": "rare"
+    },
+    "549": {
+        "name": "BAHAMAS",
+        "priority": "high",
+        "type": "rare"
+    },
+    "550": {
+        "name": "BAHRAIN",
+        "priority": "high",
+        "type": "rare"
+    },
+    "551": {
+        "name": "BANGLADESH",
+        "priority": "high",
+        "type": "rare"
+    },
+    "552": {
+        "name": "BARBADOS",
+        "priority": "high",
+        "type": "rare"
+    },
+    "553": {
+        "name": "BELARUS",
+        "priority": "high",
+        "type": "rare"
+    },
+    "554": {
+        "name": "BELGIUM",
+        "priority": "high",
+        "type": "rare"
+    },
+    "555": {
+        "name": "BELIZE",
+        "priority": "high",
+        "type": "rare"
+    },
+    "556": {
+        "name": "BENIN",
+        "priority": "high",
+        "type": "rare"
+    },
+    "557": {
+        "name": "BHUTAN",
+        "priority": "high",
+        "type": "rare"
+    },
+    "558": {
+        "name": "BOLIVIA",
+        "priority": "high",
+        "type": "rare"
+    },
+    "559": {
+        "name": "BOSNIA-HERZEGOVINA",
+        "priority": "high",
+        "type": "rare"
+    },
+    "560": {
+        "name": "BOTSWANA",
+        "priority": "high",
+        "type": "rare"
+    },
+    "561": {
+        "name": "BRAZIL",
+        "priority": "high",
+        "type": "rare"
+    },
+    "562": {
+        "name": "BRUNEI",
+        "priority": "high",
+        "type": "rare"
+    },
+    "563": {
+        "name": "BULGARIA",
+        "priority": "high",
+        "type": "rare"
+    },
+    "564": {
+        "name": "BURKINA FASO",
+        "priority": "high",
+        "type": "rare"
+    },
+    "565": {
+        "name": "BURUNDI",
+        "priority": "high",
+        "type": "rare"
+    },
+    "566": {
+        "name": "CAMBODIA",
+        "priority": "high",
+        "type": "rare"
+    },
+    "567": {
+        "name": "CAMEROON",
+        "priority": "high",
+        "type": "rare"
+    },
+    "568": {
+        "name": "CANADA",
+        "priority": "high",
+        "type": "rare"
+    },
+    "569": {
+        "name": "CAPE VERDE",
+        "priority": "high",
+        "type": "rare"
+    },
+    "570": {
+        "name": "CENTRAL AFRICAN REPUBLIC",
+        "priority": "high",
+        "type": "rare"
+    },
+    "571": {
+        "name": "CHAD",
+        "priority": "high",
+        "type": "rare"
+    },
+    "572": {
+        "name": "CHILE",
+        "priority": "high",
+        "type": "rare"
+    },
+    "574": {
+        "name": "COLOMBIA",
+        "priority": "high",
+        "type": "rare"
+    },
+    "575": {
+        "name": "COMOROS",
+        "priority": "high",
+        "type": "rare"
+    },
+    "576": {
+        "name": "CONGO",
+        "priority": "high",
+        "type": "rare"
+    },
+    "577": {
+        "name": "COOK ISLANDS",
+        "priority": "high",
+        "type": "rare"
+    },
+    "578": {
+        "name": "COSTA RICA",
+        "priority": "high",
+        "type": "rare"
+    },
+    "579": {
+        "name": "COTE D IVOIRE",
+        "priority": "high",
+        "type": "rare"
+    },
+    "580": {
+        "name": "CROATIA",
+        "priority": "high",
+        "type": "rare"
+    },
+    "583": {
+        "name": "CZECH REPUBLIC",
+        "priority": "high",
+        "type": "rare"
+    },
+    "584": {
+        "name": "DENMARK",
+        "priority": "high",
+        "type": "rare"
+    },
+    "585": {
+        "name": "DJIBOUTI",
+        "priority": "high",
+        "type": "rare"
+    },
+    "586": {
+        "name": "DOMINICA",
+        "priority": "high",
+        "type": "rare"
+    },
+    "587": {
+        "name": "DOMINICAN REPUBLIC",
+        "priority": "high",
+        "type": "rare"
+    },
+    "588": {
+        "name": "ECUADOR",
+        "priority": "high",
+        "type": "rare"
+    },
+    "589": {
+        "name": "EGYPT",
+        "priority": "high",
+        "type": "rare"
+    },
+    "590": {
+        "name": "EL SALVADOR",
+        "priority": "high",
+        "type": "rare"
+    },
+    "591": {
+        "name": "EQUATORIAL GUINEA",
+        "priority": "high",
+        "type": "rare"
+    },
+    "592": {
+        "name": "ERITREA",
+        "priority": "high",
+        "type": "rare"
+    },
+    "593": {
+        "name": "ESTONIA",
+        "priority": "high",
+        "type": "rare"
+    },
+    "594": {
+        "name": "ETHIOPIA",
+        "priority": "high",
+        "type": "rare"
+    },
+    "595": {
+        "name": "FIJI",
+        "priority": "high",
+        "type": "rare"
+    },
+    "596": {
+        "name": "FINLAND",
+        "priority": "high",
+        "type": "rare"
+    },
+    "597": {
+        "name": "FRANCE",
+        "priority": "high",
+        "type": "rare"
+    },
+    "598": {
+        "name": "GABON",
+        "priority": "high",
+        "type": "rare"
+    },
+    "599": {
+        "name": "GAMBIA",
+        "priority": "high",
+        "type": "rare"
+    },
+    "600": {
+        "name": "GEORGIA",
+        "priority": "high",
+        "type": "rare"
+    },
+    "601": {
+        "name": "GERMANY",
+        "priority": "high",
+        "type": "rare"
+    },
+    "602": {
+        "name": "GHANA",
+        "priority": "high",
+        "type": "rare"
+    },
+    "603": {
+        "name": "GREECE",
+        "priority": "high",
+        "type": "rare"
+    },
+    "604": {
+        "name": "GRENADA",
+        "priority": "high",
+        "type": "rare"
+    },
+    "605": {
+        "name": "GUATEMALA",
+        "priority": "high",
+        "type": "rare"
+    },
+    "606": {
+        "name": "GUINEA",
+        "priority": "high",
+        "type": "rare"
+    },
+    "607": {
+        "name": "GUINEA-BISSAU",
+        "priority": "high",
+        "type": "rare"
+    },
+    "608": {
+        "name": "GUYANA",
+        "priority": "high",
+        "type": "rare"
+    },
+    "609": {
+        "name": "HAITI",
+        "priority": "high",
+        "type": "rare"
+    },
+    "610": {
+        "name": "HONDURAS",
+        "priority": "high",
+        "type": "rare"
+    },
+    "611": {
+        "name": "HUNGARY",
+        "priority": "high",
+        "type": "rare"
+    },
+    "612": {
+        "name": "ICELAND",
+        "priority": "high",
+        "type": "rare"
+    },
+    "613": {
+        "name": "INDIA",
+        "priority": "high",
+        "type": "rare"
+    },
+    "615": {
+        "name": "IRAN",
+        "priority": "high",
+        "type": "rare"
+    },
+    "616": {
+        "name": "IRAQ",
+        "priority": "high",
+        "type": "rare"
+    },
+    "617": {
+        "name": "IRELAND",
+        "priority": "high",
+        "type": "rare"
+    },
+    "618": {
+        "name": "ISRAEL",
+        "priority": "high",
+        "type": "rare"
+    },
+    "619": {
+        "name": "ITALY",
+        "priority": "high",
+        "type": "rare"
+    },
+    "620": {
+        "name": "JAMAICA",
+        "priority": "high",
+        "type": "rare"
+    },
+    "622": {
+        "name": "JORDAN",
+        "priority": "high",
+        "type": "rare"
+    },
+    "623": {
+        "name": "KAZAKHSTAN",
+        "priority": "high",
+        "type": "rare"
+    },
+    "624": {
+        "name": "KENYA",
+        "priority": "high",
+        "type": "rare"
+    },
+    "625": {
+        "name": "KIRIBATI",
+        "priority": "high",
+        "type": "rare"
+    },
+    "626": {
+        "name": "KOREA",
+        "priority": "high",
+        "type": "rare"
+    },
+    "627": {
+        "name": "KUWAIT",
+        "priority": "high",
+        "type": "rare"
+    },
+    "628": {
+        "name": "KYRGYZSTAN",
+        "priority": "high",
+        "type": "rare"
+    },
+    "629": {
+        "name": "LAOS",
+        "priority": "high",
+        "type": "rare"
+    },
+    "630": {
+        "name": "LATVIA",
+        "priority": "high",
+        "type": "rare"
+    },
+    "631": {
+        "name": "LEBANON",
+        "priority": "high",
+        "type": "rare"
+    },
+    "632": {
+        "name": "LESOTHO",
+        "priority": "high",
+        "type": "rare"
+    },
+    "633": {
+        "name": "LIBERIA",
+        "priority": "high",
+        "type": "rare"
+    },
+    "634": {
+        "name": "LIBYA",
+        "priority": "high",
+        "type": "rare"
+    },
+    "635": {
+        "name": "LIECHTENSTEIN",
+        "priority": "high",
+        "type": "rare"
+    },
+    "636": {
+        "name": "LITHUANIA",
+        "priority": "high",
+        "type": "rare"
+    },
+    "637": {
+        "name": "LUXEMBOURG",
+        "priority": "high",
+        "type": "rare"
+    },
+    "638": {
+        "name": "MACEDONIA",
+        "priority": "high",
+        "type": "rare"
+    },
+    "639": {
+        "name": "MADAGASCAR",
+        "priority": "high",
+        "type": "rare"
+    },
+    "640": {
+        "name": "MALAWI",
+        "priority": "high",
+        "type": "rare"
+    },
+    "641": {
+        "name": "MALAYSIA",
+        "priority": "high",
+        "type": "rare"
+    },
+    "642": {
+        "name": "MALDIVES",
+        "priority": "high",
+        "type": "rare"
+    },
+    "643": {
+        "name": "MALI",
+        "priority": "high",
+        "type": "rare"
+    },
+    "644": {
+        "name": "MALTA",
+        "priority": "high",
+        "type": "rare"
+    },
+    "645": {
+        "name": "MARSHALL ISLANDS",
+        "priority": "high",
+        "type": "rare"
+    },
+    "646": {
+        "name": "MAURITANIA",
+        "priority": "high",
+        "type": "rare"
+    },
+    "647": {
+        "name": "MAURITIUS",
+        "priority": "high",
+        "type": "rare"
+    },
+    "648": {
+        "name": "MEXICO",
+        "priority": "high",
+        "type": "rare"
+    },
+    "649": {
+        "name": "MICRONESIA",
+        "priority": "high",
+        "type": "rare"
+    },
+    "650": {
+        "name": "MOLDOVA",
+        "priority": "high",
+        "type": "rare"
+    },
+    "651": {
+        "name": "MONACO",
+        "priority": "high",
+        "type": "rare"
+    },
+    "652": {
+        "name": "MONGOLIA",
+        "priority": "high",
+        "type": "rare"
+    },
+    "653": {
+        "name": "MONTENEGRO",
+        "priority": "high",
+        "type": "rare"
+    },
+    "654": {
+        "name": "MOROCCO",
+        "priority": "high",
+        "type": "rare"
+    },
+    "655": {
+        "name": "MOZAMBIQUE",
+        "priority": "high",
+        "type": "rare"
+    },
+    "656": {
+        "name": "MYANMAR",
+        "priority": "high",
+        "type": "rare"
+    },
+    "657": {
+        "name": "NAMIBIA",
+        "priority": "high",
+        "type": "rare"
+    },
+    "658": {
+        "name": "NAURU",
+        "priority": "high",
+        "type": "rare"
+    },
+    "659": {
+        "name": "NEPAL",
+        "priority": "high",
+        "type": "rare"
+    },
+    "660": {
+        "name": "NETHERLANDS",
+        "priority": "high",
+        "type": "rare"
+    },
+    "661": {
+        "name": "NEW ZEALAND",
+        "priority": "high",
+        "type": "rare"
+    },
+    "662": {
+        "name": "NICARAGUA",
+        "priority": "high",
+        "type": "rare"
+    },
+    "663": {
+        "name": "NIGER",
+        "priority": "high",
+        "type": "rare"
+    },
+    "664": {
+        "name": "NIGERIA",
+        "priority": "high",
+        "type": "rare"
+    },
+    "665": {
+        "name": "NIUE",
+        "priority": "high",
+        "type": "rare"
+    },
+    "666": {
+        "name": "NORWAY",
+        "priority": "high",
+        "type": "rare"
+    },
+    "667": {
+        "name": "OMAN",
+        "priority": "high",
+        "type": "rare"
+    },
+    "668": {
+        "name": "PAKISTAN",
+        "priority": "high",
+        "type": "rare"
+    },
+    "669": {
+        "name": "PALAU",
+        "priority": "high",
+        "type": "rare"
+    },
+    "670": {
+        "name": "PANAMA",
+        "priority": "high",
+        "type": "rare"
+    },
+    "671": {
+        "name": "PAPUA NEW GUINEA",
+        "priority": "high",
+        "type": "rare"
+    },
+    "672": {
+        "name": "PARAGUAY",
+        "priority": "high",
+        "type": "rare"
+    },
+    "673": {
+        "name": "PERU",
+        "priority": "high",
+        "type": "rare"
+    },
+    "674": {
+        "name": "PHILIPPINES",
+        "priority": "high",
+        "type": "rare"
+    },
+    "675": {
+        "name": "POLAND",
+        "priority": "high",
+        "type": "rare"
+    },
+    "676": {
+        "name": "PORTUGAL",
+        "priority": "high",
+        "type": "rare"
+    },
+    "677": {
+        "name": "QATAR",
+        "priority": "high",
+        "type": "rare"
+    },
+    "678": {
+        "name": "ROMANIA",
+        "priority": "high",
+        "type": "rare"
+    },
+    "679": {
+        "name": "RUSSIA",
+        "priority": "high",
+        "type": "rare"
+    },
+    "680": {
+        "name": "RWANDA",
+        "priority": "high",
+        "type": "rare"
+    },
+    "681": {
+        "name": "SAINT KITTS AND NEVIS",
+        "priority": "high",
+        "type": "rare"
+    },
+    "682": {
+        "name": "SAINT LUCIA",
+        "priority": "high",
+        "type": "rare"
+    },
+    "683": {
+        "name": "SAINT VINCENT AND THE GRENADINES",
+        "priority": "high",
+        "type": "rare"
+    },
+    "684": {
+        "name": "SAMOA",
+        "priority": "high",
+        "type": "rare"
+    },
+    "685": {
+        "name": "SAN MARINO",
+        "priority": "high",
+        "type": "rare"
+    },
+    "686": {
+        "name": "SAO TOME AND PRINCIPE",
+        "priority": "high",
+        "type": "rare"
+    },
+    "687": {
+        "name": "SAUDI ARABIA",
+        "priority": "high",
+        "type": "rare"
+    },
+    "688": {
+        "name": "SENEGAL",
+        "priority": "high",
+        "type": "rare"
+    },
+    "689": {
+        "name": "SERBIA",
+        "priority": "high",
+        "type": "rare"
+    },
+    "690": {
+        "name": "SEYCHELLES",
+        "priority": "high",
+        "type": "rare"
+    },
+    "691": {
+        "name": "SIERRA LEONE",
+        "priority": "high",
+        "type": "rare"
+    },
+    "692": {
+        "name": "SINGAPORE",
+        "priority": "high",
+        "type": "rare"
+    },
+    "693": {
+        "name": "SLOVAKIA",
+        "priority": "high",
+        "type": "rare"
+    },
+    "694": {
+        "name": "SLOVENIA",
+        "priority": "high",
+        "type": "rare"
+    },
+    "695": {
+        "name": "SOLOMON ISLANDS",
+        "priority": "high",
+        "type": "rare"
+    },
+    "696": {
+        "name": "SOMALIA",
+        "priority": "high",
+        "type": "rare"
+    },
+    "697": {
+        "name": "SOUTH AFRICA",
+        "priority": "high",
+        "type": "rare"
+    },
+    "698": {
+        "name": "SPAIN",
+        "priority": "high",
+        "type": "rare"
+    },
+    "699": {
+        "name": "SRI LANKA",
+        "priority": "high",
+        "type": "rare"
+    },
+    "700": {
+        "name": "SUDAN",
+        "priority": "high",
+        "type": "rare"
+    },
+    "701": {
+        "name": "SURINAME",
+        "priority": "high",
+        "type": "rare"
+    },
+    "702": {
+        "name": "SWAZILAND",
+        "priority": "high",
+        "type": "rare"
+    },
+    "703": {
+        "name": "SWEDEN",
+        "priority": "high",
+        "type": "rare"
+    },
+    "704": {
+        "name": "SWITZERLAND",
+        "priority": "high",
+        "type": "rare"
+    },
+    "705": {
+        "name": "SYRIA",
+        "priority": "high",
+        "type": "rare"
+    },
+    "706": {
+        "name": "TAIWAN",
+        "priority": "high",
+        "type": "rare"
+    },
+    "707": {
+        "name": "TAJIKISTAN",
+        "priority": "high",
+        "type": "rare"
+    },
+    "708": {
+        "name": "TANZANIA",
+        "priority": "high",
+        "type": "rare"
+    },
+    "709": {
+        "name": "THAILAND",
+        "priority": "high",
+        "type": "rare"
+    },
+    "710": {
+        "name": "TOGO",
+        "priority": "high",
+        "type": "rare"
+    },
+    "711": {
+        "name": "TONGA",
+        "priority": "high",
+        "type": "rare"
+    },
+    "712": {
+        "name": "TRINIDAD AND TOBAGO",
+        "priority": "high",
+        "type": "rare"
+    },
+    "713": {
+        "name": "TUNISIA",
+        "priority": "high",
+        "type": "rare"
+    },
+    "714": {
+        "name": "TURKEY",
+        "priority": "high",
+        "type": "rare"
+    },
+    "715": {
+        "name": "TURKMENISTAN",
+        "priority": "high",
+        "type": "rare"
+    },
+    "716": {
+        "name": "TUVALU",
+        "priority": "high",
+        "type": "rare"
+    },
+    "717": {
+        "name": "UGANDA",
+        "priority": "high",
+        "type": "rare"
+    },
+    "718": {
+        "name": "UKRAINE",
+        "priority": "high",
+        "type": "rare"
+    },
+    "719": {
+        "name": "UNITED ARAB EMIRATES",
+        "priority": "high",
+        "type": "rare"
+    },
+    "722": {
+        "name": "URUGUAY",
+        "priority": "high",
+        "type": "rare"
+    },
+    "723": {
+        "name": "UZBEKISTAN",
+        "priority": "high",
+        "type": "rare"
+    },
+    "724": {
+        "name": "VANUATU",
+        "priority": "high",
+        "type": "rare"
+    },
+    "725": {
+        "name": "VATICAN CITY",
+        "priority": "high",
+        "type": "rare"
+    },
+    "726": {
+        "name": "VENEZUELA",
+        "priority": "high",
+        "type": "rare"
+    },
+    "727": {
+        "name": "VIETNAM",
+        "priority": "high",
+        "type": "rare"
+    },
+    "728": {
+        "name": "YEMEN",
+        "priority": "high",
+        "type": "rare"
+    },
+    "729": {
+        "name": "ZAMBIA",
+        "priority": "high",
+        "type": "rare"
+    },
+    "730": {
+        "name": "ZIMBABWE",
+        "priority": "high",
+        "type": "rare"
+    }
+}

@@ -1,0 +1,26 @@
+{
+    "version": "2.0",
+    "created_date": "2025-11-18 05:45:26",
+    "original_config": "dxcc_config.php",
+    "whitelist_mode": "whitelist_only",
+    "files": [
+        "dxcc_whitelist_global.json",
+        "dxcc_whitelist_160m.json",
+        "dxcc_whitelist_80m.json",
+        "dxcc_whitelist_40m.json",
+        "dxcc_whitelist_30m.json",
+        "dxcc_whitelist_20m.json",
+        "dxcc_whitelist_17m.json",
+        "dxcc_whitelist_15m.json",
+        "dxcc_whitelist_12m.json",
+        "dxcc_whitelist_10m.json",
+        "dxcc_whitelist_6m.json",
+        "dxcc_worked_cache.json"
+    ],
+    "stats": {
+        "original_count": 337,
+        "worked_count": 183,
+        "global_count": 333,
+        "bands_configured": 10
+    }
+}
